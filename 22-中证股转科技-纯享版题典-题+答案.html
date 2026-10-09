@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>22-中证股转科技-纯享版题典-题+答案</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      white-space: pre-wrap;
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+    /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+  <style>
+      /* Default styles provided by pandoc.
+      ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+      */
+      html {
+        color: #1a1a1a;
+        background-color: #fdfdfd;
+      }
+      body {
+        margin: 0 auto;
+        max-width: 36em;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        hyphens: auto;
+        overflow-wrap: break-word;
+        text-rendering: optimizeLegibility;
+        font-kerning: normal;
+      }
+      @media (max-width: 600px) {
+        body {
+          font-size: 0.9em;
+          padding: 12px;
+        }
+        h1 {
+          font-size: 1.8em;
+        }
+      }
+      @media print {
+        html {
+          background-color: white;
+        }
+        body {
+          background-color: transparent;
+          color: black;
+          font-size: 12pt;
+        }
+        p, h2, h3 {
+          orphans: 3;
+          widows: 3;
+        }
+        h2, h3, h4 {
+          page-break-after: avoid;
+        }
+      }
+      p {
+        margin: 1em 0;
+      }
+      a {
+        color: #1a1a1a;
+      }
+      a:visited {
+        color: #1a1a1a;
+      }
+      img {
+        max-width: 100%;
+      }
+      svg {
+        height: auto;
+        max-width: 100%;
+      }
+      h1, h2, h3, h4, h5, h6 {
+        margin-top: 1.4em;
+      }
+      h5, h6 {
+        font-size: 1em;
+        font-style: italic;
+      }
+      h6 {
+        font-weight: normal;
+      }
+      ol, ul {
+        padding-left: 1.7em;
+        margin-top: 1em;
+      }
+      li > ol, li > ul {
+        margin-top: 0;
+      }
+      blockquote {
+        margin: 1em 0 1em 1.7em;
+        padding-left: 1em;
+        border-left: 2px solid #e6e6e6;
+        color: #606060;
+      }
+      code {
+        white-space: pre-wrap;
+        font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+        font-size: 85%;
+        margin: 0;
+        hyphens: manual;
+      }
+      pre {
+        margin: 1em 0;
+        overflow: auto;
+      }
+      pre code {
+        padding: 0;
+        overflow: visible;
+        overflow-wrap: normal;
+      }
+      .sourceCode {
+       background-color: transparent;
+       overflow: visible;
+      }
+      hr {
+        border: none;
+        border-top: 1px solid #1a1a1a;
+        height: 1px;
+        margin: 1em 0;
+      }
+      table {
+        margin: 1em 0;
+        border-collapse: collapse;
+        width: 100%;
+        overflow-x: auto;
+        display: block;
+        font-variant-numeric: lining-nums tabular-nums;
+      }
+      table caption {
+        margin-bottom: 0.75em;
+      }
+      tbody {
+        margin-top: 0.5em;
+        border-top: 1px solid #1a1a1a;
+        border-bottom: 1px solid #1a1a1a;
+      }
+      th {
+        border-top: 1px solid #1a1a1a;
+        padding: 0.25em 0.5em 0.25em 0.5em;
+      }
+      td {
+        padding: 0.125em 0.5em 0.25em 0.5em;
+      }
+      header {
+        margin-bottom: 4em;
+        text-align: center;
+      }
+      #TOC li {
+        list-style: none;
+      }
+      #TOC ul {
+        padding-left: 1.3em;
+      }
+      #TOC > ul {
+        padding-left: 0;
+      }
+      #TOC a:not(:hover) {
+        text-decoration: none;
+      }
+      span.smallcaps{font-variant: small-caps;}
+      div.columns{display: flex; gap: min(4vw, 1.5em);}
+      div.column{flex: auto; overflow-x: auto;}
+      div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+      /* The extra [class] is a hack that increases specificity enough to
+         override a similar rule in reveal.js */
+      ul.task-list[class]{list-style: none;}
+      ul.task-list li input[type="checkbox"] {
+        font-size: inherit;
+        width: 0.8em;
+        margin: 0 0.8em 0.2em -1.6em;
+        vertical-align: middle;
+      }
+      .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+    </style>
+</head>
+<body>
+<header class="doc-nav">
+  <div class="doc-nav-inner">
+    <a class="doc-nav-back" href="index.html">← 返回目录首页</a>
+    <span class="doc-nav-title">面试备战 · 李方好</span>
+  </div>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#中证股转科技-信息技术岗笔试-纯享版题典题-答案"
+id="toc-中证股转科技-信息技术岗笔试-纯享版题典题-答案">中证股转科技 ·
+信息技术岗笔试 — 纯享版题典（题 + 答案）</a>
+<ul>
+<li><a href="#一综合能力-行测" id="toc-一综合能力-行测">一、综合能力 /
+行测</a></li>
+<li><a href="#二计算机专业"
+id="toc-二计算机专业">二、计算机专业</a></li>
+<li><a href="#三编程题机考手写非-oj无自动补全"
+id="toc-三编程题机考手写非-oj无自动补全">三、编程题（机考手写，非
+OJ、无自动补全）</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="中证股转科技-信息技术岗笔试-纯享版题典题-答案">中证股转科技 ·
+信息技术岗笔试 — 纯享版题典（题 + 答案）</h1>
+<blockquote>
+<p>依据中证股转及姊妹单位（中证登等）公开笔经题型规律整理的高频模拟/预测题，非官方真题，附答案供冲刺背诵。题型为金融科技
+IT 岗标准三段式：行测 → 计算机专业 → 手写编程。</p>
+</blockquote>
+<h2 id="一综合能力-行测">一、综合能力 / 行测</h2>
+<h3 id="言语理解与表达">1. 言语理解与表达</h3>
+<p><strong>1.</strong>
+依次填入横线处最恰当的一项是：儒家强调“________”，主张将心比心；道家追求“________”，倡导顺应自然、不妄为。
+A. 推己及人 / 无为而治　B. 见贤思齐 / 顺其自然　C. 克己复礼 /
+清净无为　D. 三省吾身 / 道法自然 <strong>答案：A</strong></p>
+<p><strong>2.</strong> 下列句子没有语病的一项是： A.
+通过本次培训，使我的业务能力有了很大提升。 B.
+能否保持清正廉洁，是干部合格的重要标准。 C.
+我国高铁运营里程稳居世界第一，已超过 4 万公里。 D.
+为了防止不发生类似事故，公司完善了制度。 <strong>答案：C</strong>（A
+缺主语；B 两面对一面；D 否定失当）</p>
+<p><strong>3.</strong>
+对下面这段文字概括最准确的是：“金融科技的本质是金融，技术是手段。脱离风控的技术创新如同无根之木。任何金融活动都必须纳入监管框架。”
+A. 金融科技将取代传统金融　B. 技术驱动下监管需跟上创新 C.
+风控是底线，技术须服从监管与风控　D. 监管会扼制创新
+<strong>答案：C</strong></p>
+<p><strong>4.</strong> 语句排序：①
+它不仅改变了支付方式，也重塑了商业生态 ② 移动支付在中国的发展世界领先 ③
+从二维码到刷脸，技术迭代迅速 ④ 这正是技术创新与市场需求共振的结果 A.
+②③④①　B. ②③①④　C. ①③②④　D. ②①③④ <strong>答案：B</strong></p>
+<p><strong>5.</strong> 面对复杂市场环境，企业不能
+________，必须未雨绸缪。 A. 临渴掘井　B. 居安思危　C. 防患未然　D.
+高枕无忧 <strong>答案：A</strong>（与“未雨绸缪”正反相对）</p>
+<p><strong>6.</strong> 下列句子中成语使用不正确的一项是： A.
+这篇论文见解独到，真可谓不刊之论。 B.
+他做的报告汗牛充栋，听众却昏昏欲睡。 C. 面对质疑，他侃侃而谈，从容不迫。
+D. 这部作品文不加点，一气呵成。
+<strong>答案：B</strong>（汗牛充栋形容书籍极多，不能形容报告）</p>
+<p><strong>7.</strong>
+对下面这段文字概括最准确的是：“数字经济不是虚拟经济，而是实体经济的数字化升级。它既包含数字产业化，也包含产业数字化。推动数字经济与实体经济深度融合，是高质量发展的必由之路。”
+A. 数字经济是虚拟经济　B. 数字经济将取代实体经济 C.
+数字经济与实体经济融合是高质量发展必由之路　D. 产业数字化不重要
+<strong>答案：C</strong></p>
+<p><strong>8.</strong> 语句排序：① 数据已成为关键生产要素 ②
+数字技术的发展使其价值凸显 ③ 各国纷纷布局数字经济 ④
+谁掌握数据谁就掌握未来 A. ①②③④　B. ②①③④　C. ①③②④　D. ②①④③
+<strong>答案：A</strong></p>
+<p><strong>9.</strong> 在推进改革的过程中，我们要
+________，不能眉毛胡子一把抓。 A. 统筹兼顾　B. 各行其是　C. 独善其身　D.
+墨守成规 <strong>答案：A</strong></p>
+<p><strong>10.</strong> 下列句子没有语病的一项是： A.
+由于天气原因，使航班延误。 B. 他的事迹对于我们是陌生的。 C.
+这款产品深受用户所欢迎。 D. 经过努力，他终于取得了成功。
+<strong>答案：D</strong>（A 缺主语；B 主客颠倒；C “深受……所”杂糅）</p>
+<h3 id="数量关系">2. 数量关系</h3>
+<p><strong>11.</strong> 甲单独做需 10 天，乙单独做需 15
+天，两人合作需几天？ A. 5　B. 6　C. 7　D. 8
+<strong>答案：B</strong>（1÷(1/10+1/15)=6）</p>
+<p><strong>12.</strong> A、B 相距 120km，甲以 40km/h 先出发 1 小时，乙以
+60km/h 从同地追，几小时追上？ A. 2　B. 3　C. 4　D. 5
+<strong>答案：A</strong>（40÷(60−40)=2）</p>
+<p><strong>13.</strong> 从 5 男 3 女中选 3 人，至少 1 女，有几种？
+<strong>答案：46</strong>（C(8,3)−C(5,3)=56−10）</p>
+<p><strong>14.</strong> 掷两枚均匀骰子，点数和 &gt; 9 的概率？
+<strong>答案：1/6</strong>（(4,6)(5,5)(6,4)(5,6)(6,5)(6,6) 共 6 种 /
+36）</p>
+<p><strong>15.</strong> 数字推理：2, 6, 12, 20, 30, ? A. 36　B. 40　C.
+42　D. 44 <strong>答案：C</strong>（n(n+1)）</p>
+<p><strong>16.</strong> 一件商品成本 100 元，按标价 8 折出售仍获利
+20%，标价是多少元？ <strong>答案：150</strong>（0.8x=120 → x=150）</p>
+<p><strong>17.</strong> 100g 浓度为 10% 的盐水加入 10g 盐，新浓度约？
+<strong>答案：18.2%</strong>（(10+10)/(100+10)≈18.2%）</p>
+<p><strong>18.</strong> 父子年龄和 60 岁，5 年前父是子的 4
+倍，现在父子各几岁？ <strong>答案：子 15 岁，父 45 岁</strong>（设子
+x：55−x=4(x−5) → x=15）</p>
+<p><strong>19.</strong> 一条路长 100 米，每隔 10
+米种一棵（两端都种），共几棵？ <strong>答案：11</strong>（100/10+1）</p>
+<p><strong>20.</strong> 数字推理：1, 1, 2, 3, 5, 8, ?
+<strong>答案：13</strong>（斐波那契数列）</p>
+<h3 id="判断推理">3. 判断推理</h3>
+<p><strong>21.</strong> 有人认为“多刷题就能通过笔试”，最能削弱的是： A.
+有人刷很多题仍没通过　B. 笔试还考查心态与知识迁移，刷题无法覆盖 C.
+刷题能熟悉题型　D. 历年题重复率高 <strong>答案：B</strong></p>
+<p><strong>22.</strong> 图形推理（规律描述）：每幅图黑点数量依次为
+1、2、3、4，则第 5 幅有几个？ <strong>答案：5</strong></p>
+<p><strong>23.</strong> 类比：程序员：代码 = 作家：？ A. 小说　B. 笔　C.
+读者　D. 出版社 <strong>答案：A</strong>（产出物）</p>
+<p><strong>24.</strong> 下列属于“沉没成本”的是： A. 已花 3000
+元买的不可退培训，决策是否继续时这 3000 元 B. 未来要交的房租　C.
+预计的奖金　D. 下月水电费
+<strong>答案：A</strong>（已发生且不可收回）</p>
+<p><strong>25.</strong> 已知“下雨 → 地湿”，现知“地湿”，能否推出“下雨”？
+A. 能　B. 不能　C. 有时能　D. 视情况
+<strong>答案：B</strong>（肯定后件不能肯定前件）</p>
+<p><strong>26.</strong> 下列能加强“读书能提升认知”的是： A.
+研究显示阅读量与认知测试得分正相关　B. 有人不读书也聪明 C.
+读书费时间　D. 书很贵 <strong>答案：A</strong></p>
+<p><strong>27.</strong> 类比：医生：医院 = 教师：？ A. 学校　B. 学生　C.
+课本　D. 教室 <strong>答案：A</strong>（职业与场所）</p>
+<p><strong>28.</strong> 图形推理（规律描述）：图形每次顺时针旋转 90°，第
+3 幅为横向，则第 4 幅为？ <strong>答案：纵向</strong>（再转 90°）</p>
+<p><strong>29.</strong> 所有 A 是 B，所有 B 是 C，则可推出？
+<strong>答案：所有 A 是 C</strong>（三段论传递）</p>
+<p><strong>30.</strong> “所有同学都及格了”的矛盾命题是？
+<strong>答案：有的同学没及格</strong></p>
+<h3 id="资料分析">4. 资料分析</h3>
+<p><strong>材料 1</strong>：某科技公司 2023
+年营收（亿元）：Q1=120，Q2=150，Q3=180，Q4=200；2022 全年 540。</p>
+<p><strong>31.</strong> 2023 全年营收？ <strong>答案：650 亿</strong>
+<strong>32.</strong> Q4 环比增速？
+<strong>答案：(200−180)/180≈11.1%</strong> <strong>33.</strong>
+上半年占全年比重？ <strong>答案：(120+150)/650≈41.5%</strong>
+<strong>34.</strong> 2023 同比增长率？
+<strong>答案：(650−540)/540≈20.4%</strong> <strong>35.</strong>
+哪一季环比增速最高？ <strong>答案：Q2（(150−120)/120=25%）</strong></p>
+<p><strong>材料 2</strong>：某银行 2023
+各季度不良贷款率：Q1=1.5%，Q2=1.4%，Q3=1.3%，Q4=1.2%；贷款总额 Q1=1000
+亿，每季递增 100 亿。</p>
+<p><strong>36.</strong> Q4 贷款总额？ <strong>答案：1300
+亿</strong>（1000+300） <strong>37.</strong>
+全年平均不良率（算术平均）？
+<strong>答案：(1.5+1.4+1.3+1.2)/4=1.35%</strong> <strong>38.</strong>
+不良率整体变化趋势？ <strong>答案：逐季下降</strong>
+<strong>39.</strong> Q3 不良贷款余额？ <strong>答案：1100×1.3%=14.3
+亿</strong> <strong>40.</strong> 全年不良贷款总额？
+<strong>答案：1000×1.5%+1100×1.4%+1200×1.3%+1300×1.2%=61.6
+亿</strong></p>
+<h2 id="二计算机专业">二、计算机专业</h2>
+<h3 id="数据结构与算法4160">5. 数据结构与算法（41–60）</h3>
+<p><strong>41.</strong> 平均时间复杂度最优的排序是？ A. 冒泡 O(n²)　B.
+快速 O(nlogn)　C. 插入 O(n²)　D. 选择 O(n²) <strong>答案：B</strong></p>
+<p><strong>42.</strong>（不定项）线性时间复杂度的排序有？ A. 计数　B.
+基数　C. 桶　D. 归并 <strong>答案：A、B、C</strong></p>
+<p><strong>43.</strong> 二叉树第 k 层最多节点数？
+<strong>答案：2^(k−1)</strong> <strong>44.</strong> 完全二叉树 200
+个节点，叶子节点数？ <strong>答案：100</strong> <strong>45.</strong>
+对二叉搜索树（BST）做中序遍历得到？
+<strong>答案：升序（有序）序列</strong>
+<strong>46.</strong>（不定项）哈希冲突解决方法有？ A. 开放定址法　B.
+链地址法　C. 再哈希法　D. 二分查找 <strong>答案：A、B、C</strong></p>
+<p><strong>47.</strong>（不定项）栈的应用有？ A. 递归　B. 表达式求值　C.
+括号匹配　D. 广度优先搜索 <strong>答案：A、B、C</strong>（D 用队列）</p>
+<p><strong>48.</strong> 哪种数据结构最适合 BFS？
+<strong>答案：队列</strong> <strong>49.</strong> Dijkstra
+最短路径算法基于什么策略？对权值有何要求？
+<strong>答案：贪心；边权必须非负</strong> <strong>50.</strong>
+平衡二叉树（AVL）任意节点左右子树高度差不超过？
+<strong>答案：1</strong></p>
+<p><strong>51.</strong> 堆通常是一种什么结构？大顶堆满足什么？
+<strong>答案：完全二叉树；父节点 ≥ 子节点</strong> <strong>52.</strong>
+红黑树的关键性质（任写两条）？
+<strong>答案：根和叶为黑；红节点的子必为黑；任一路径黑节点数相同</strong>
+<strong>53.</strong> B+ 树相比 B 树更适合数据库的原因？
+<strong>答案：非叶只存索引、叶节点串成有序链表，范围查询与磁盘 IO
+友好</strong> <strong>54.</strong> 快速排序最坏时间复杂度及触发条件？
+<strong>答案：O(n²)；已有序且首元素作轴</strong> <strong>55.</strong>
+归并排序的空间复杂度与稳定性？ <strong>答案：O(n)，稳定</strong></p>
+<p><strong>56.</strong> 判断单链表是否有环通常用？
+<strong>答案：快慢指针（Floyd）</strong> <strong>57.</strong>
+栈溢出最常见于？ <strong>答案：递归过深 / 无限递归</strong>
+<strong>58.</strong> 哈夫曼树用于？
+<strong>答案：数据压缩（带权路径最短）</strong> <strong>59.</strong>
+拓扑排序适用于？ <strong>答案：有向无环图（DAG）的任务调度</strong>
+<strong>60.</strong> 图的 DFS 遍历借助？
+<strong>答案：栈（递归或显式栈）</strong></p>
+<h3 id="java-语言6180">6. Java 语言（61–80）</h3>
+<p><strong>61.</strong>（不定项）<code>String a="ab"; String b="ab"; String c=new String("ab");</code>
+哪些为 true？ A. <code>a==b</code>　B. <code>a==c</code>　C.
+<code>a.equals(c)</code>　D. <code>b==c</code>
+<strong>答案：A、C</strong>（常量池复用；new 在堆，== 比地址为
+false）</p>
+<p><strong>62.</strong> ArrayList 与
+LinkedList：随机访问更快的是？频繁中间插入删除更适？
+<strong>答案：ArrayList 随机访问快；LinkedList
+插入删除频繁时更合适</strong> <strong>63.</strong> JDK8 中 HashMap
+底层结构？ <strong>答案：数组 + 链表 + 红黑树（链表长度 &gt;8
+转红黑树）</strong> <strong>64.</strong> <code>synchronized</code> 与
+<code>volatile</code> 的区别？ <strong>答案：volatile
+保证可见性、禁止重排，不保证原子性；synchronized
+保证原子性+可见性+有序性（互斥）</strong> <strong>65.</strong> Java
+创建线程的方式？ <strong>答案：继承 Thread / 实现 Runnable / 实现
+Callable / 使用线程池</strong> <strong>66.</strong> JVM
+判断对象可回收的主要算法？ <strong>答案：可达性分析（GC Roots
+不可达即回收）</strong> <strong>67.</strong>
+方法重载（overload）与重写（override）的区别？
+<strong>答案：重载同一类、看参数列表；重写子类覆盖父类、返回协变、不能抛更宽异常</strong>
+<strong>68.</strong> <code>Error</code> 与 <code>Exception</code>
+的区别？ <strong>答案：Error 表示不可恢复的严重问题（如 OOM）；Exception
+可被捕获处理</strong> <strong>69.</strong> 泛型类型擦除发生在？
+<strong>答案：编译期</strong> <strong>70.</strong>（不定项）下列哪些是
+Java 基本类型而非包装类？ A. int　B. Integer　C. double　D. Boolean
+<strong>答案：A、C</strong></p>
+<p><strong>71.</strong> <code>final</code> 修饰类、方法、变量分别含义？
+<strong>答案：类不可继承；方法不可重写；变量引用不可改</strong>
+<strong>72.</strong> String、StringBuilder、StringBuffer 区别？
+<strong>答案：String 不可变；StringBuilder 可变非线程安全；StringBuffer
+可变线程安全</strong> <strong>73.</strong> <code>==</code> 与
+<code>equals</code> 的区别？ <strong>答案：==
+比地址（基本类型比值）；equals 默认比地址，String 重写后比值</strong>
+<strong>74.</strong> Integer 自动装箱的缓存范围？ <strong>答案：−128 ~
+127</strong> <strong>75.</strong> 反射的主要用途？
+<strong>答案：运行时获取类信息、动态创建对象与调用方法</strong>
+<strong>76.</strong> Java 8 主要新特性（任写三项）？
+<strong>答案：Lambda 表达式、Stream API、Optional、接口默认方法</strong>
+<strong>77.</strong> <code>volatile</code> 能否保证 <code>i++</code>
+的原子性？ <strong>答案：不能（i++ 非原子）</strong>
+<strong>78.</strong> 线程池核心参数？
+<strong>答案：核心线程数、最大线程数、工作队列、空闲存活时间、拒绝策略</strong>
+<strong>79.</strong> 深拷贝与浅拷贝的区别？
+<strong>答案：浅拷贝复制引用；深拷贝递归复制对象本身</strong>
+<strong>80.</strong> JVM 内存区域主要有哪些？
+<strong>答案：堆、方法区（元空间）、虚拟机栈、PC
+寄存器、本地方法栈</strong></p>
+<h3 id="编译原理8190该单位特色">7. 编译原理（81–90，该单位特色）</h3>
+<p><strong>81.</strong> 编译的主要阶段依次？ <strong>答案：词法分析 →
+语法分析 → 语义分析 → 中间代码生成 → 代码优化 → 目标代码生成</strong>
+<strong>82.</strong> 词法分析器的输出？
+<strong>答案：记号（token）序列</strong> <strong>83.</strong> 正则式
+<code>a(a|b)*</code> 描述的语言？ <strong>答案：以 a 开头、后接任意多个
+a 或 b 的字符串集合</strong> <strong>84.</strong> LL(1) 三个字母的含义？
+<strong>答案：自左向右扫描、最左推导、向前看 1 个符号</strong>
+<strong>85.</strong> 语法制导翻译（SDT）主要生成？
+<strong>答案：中间代码（如三地址码）</strong> <strong>86.</strong>
+什么是 NFA 与 DFA？ <strong>答案：NFA
+非确定有限自动机（转移可多值/空）；DFA
+确定有限自动机（每状态每符号唯一转移）</strong> <strong>87.</strong>
+语法分析两大类方法？ <strong>答案：自顶向下（如 LL）、自底向上（如
+LR）</strong> <strong>88.</strong> 什么是二义文法？
+<strong>答案：同一句子存在两棵或以上不同语法树的文法</strong>
+<strong>89.</strong> 常见中间代码形式？
+<strong>答案：三地址码、四元式、逆波兰式（后缀表达式）</strong>
+<strong>90.</strong> 代码优化的目标？
+<strong>答案：减少运行时间或空间占用，且不改变程序语义</strong></p>
+<h3 id="计算机网络91100">8. 计算机网络（91–100）</h3>
+<p><strong>91.</strong> TCP 三次握手过程（标志位）？ <strong>答案：SYN →
+SYN+ACK → ACK</strong> <strong>92.</strong> HTTP 状态码 404 含义？
+<strong>答案：请求的资源未找到</strong> <strong>93.</strong> TCP 与 UDP
+的核心区别？ <strong>答案：TCP 面向连接、可靠、有流控/拥塞控制；UDP
+无连接、不可靠但开销小速度快</strong> <strong>94.</strong> DNS 的作用？
+<strong>答案：域名 → IP 地址解析</strong> <strong>95.</strong>
+计算机网络五层模型？ <strong>答案：应用层 / 传输层 / 网络层 / 数据链路层
+/ 物理层</strong> <strong>96.</strong> HTTP 与 HTTPS 的区别？
+<strong>答案：HTTPS = HTTP + TLS 加密，端口 443，防窃听篡改</strong>
+<strong>97.</strong> TCP 四次挥手过程？ <strong>答案：FIN → ACK → FIN →
+ACK</strong> <strong>98.</strong> 子网掩码的作用？ <strong>答案：区分 IP
+地址中的网络位与主机位</strong> <strong>99.</strong> GET 与 POST
+的区别？ <strong>答案：GET 参数在 URL、幂等、可缓存；POST
+在请求体、非幂等、不可缓存</strong> <strong>100.</strong> ARP 协议作用？
+<strong>答案：IP 地址 → MAC 地址解析</strong></p>
+<h3 id="操作系统101110">9. 操作系统（101–110）</h3>
+<p><strong>101.</strong> 进程与线程的区别？
+<strong>答案：进程是资源分配基本单位；线程是 CPU
+调度基本单位；同进程线程共享地址空间</strong> <strong>102.</strong>
+死锁的四个必要条件？
+<strong>答案：互斥、占有并等待、不可抢占、循环等待</strong>
+<strong>103.</strong> 银行家算法用于？ <strong>答案：死锁避免</strong>
+<strong>104.</strong> 分页与分段的主要区别？
+<strong>答案：分页物理划分、页大小固定；分段逻辑划分、段大小可变</strong>
+<strong>105.</strong> 生产者—消费者问题用何种机制同步？
+<strong>答案：信号量（semaphore）/ 互斥量 + 条件变量</strong>
+<strong>106.</strong> 虚拟内存的作用？
+<strong>答案：扩展进程逻辑地址空间，按需调页，让程序可用超过物理内存的空间</strong>
+<strong>107.</strong> 常见页面置换算法？
+<strong>答案：FIFO、LRU、OPT（最佳）</strong> <strong>108.</strong>
+进程的基本状态？ <strong>答案：就绪、运行、阻塞</strong>
+<strong>109.</strong> 什么是临界区？
+<strong>答案：访问共享资源的代码段，执行需互斥</strong>
+<strong>110.</strong> 死锁预防与避免的区别？
+<strong>答案：预防破坏四条件之一（静态）；避免用银行家算法动态判断（如安全序列）</strong></p>
+<h3 id="数据库111120">10. 数据库（111–120）</h3>
+<p><strong>111.</strong> 写出 SQL：查询 score 表中每科平均分大于 80
+的科目及平均分。 <strong>答案：</strong></p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode sql"><code class="sourceCode sql"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span> subject, <span class="fu">AVG</span>(score) <span class="kw">AS</span> avg_score</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="kw">FROM</span> score</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="kw">GROUP</span> <span class="kw">BY</span> subject</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="kw">HAVING</span> <span class="fu">AVG</span>(score) <span class="op">&gt;</span> <span class="dv">80</span>;</span></code></pre></div>
+<p><strong>112.</strong> 事务的 ACID？
+<strong>答案：原子性、一致性、隔离性、持久性</strong>
+<strong>113.</strong> 建立索引的代价？
+<strong>答案：加速查询，但占存储、降低增删改性能</strong>
+<strong>114.</strong> 第三范式（3NF）要求消除？
+<strong>答案：传递依赖</strong> <strong>115.</strong> 什么是“脏读”？
+<strong>答案：一个事务读到了另一个事务尚未提交的数据</strong>
+<strong>116.</strong> DROP、DELETE、TRUNCATE 的区别？ <strong>答案：DROP
+删表结构；DELETE 删行可回滚；TRUNCATE 清空表快且不可回滚</strong>
+<strong>117.</strong> 左连接与右连接的区别？
+<strong>答案：左连接保留左表全部行；右连接保留右表全部行</strong>
+<strong>118.</strong> 什么是视图（View）？ <strong>答案：基于 SQL
+查询的虚拟表，不存实际数据</strong> <strong>119.</strong>
+主键与外键的区别？
+<strong>答案：主键唯一标识本表一行；外键引用另一表的主键以建立关联</strong>
+<strong>120.</strong> 事务的隔离级别（由低到高）？
+<strong>答案：读未提交、读已提交、可重复读、串行化</strong></p>
+<h2 id="三编程题机考手写非-oj无自动补全">三、编程题（机考手写，非
+OJ、无自动补全）</h2>
+<blockquote>
+<p>机考在富文本框手敲代码，不许开
+IDE、不许跳出页面。务必脱机手写练习。</p>
+</blockquote>
+<p><strong>121.</strong> 两数之和：给定数组 <code>nums</code> 与目标
+<code>target</code>，返回两数之和等于 target 的下标。</p>
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode java"><code class="sourceCode java"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">public</span> <span class="dt">int</span><span class="op">[]</span> <span class="fu">twoSum</span><span class="op">(</span><span class="dt">int</span><span class="op">[]</span> nums<span class="op">,</span> <span class="dt">int</span> target<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">Map</span><span class="op">&lt;</span><span class="bu">Integer</span><span class="op">,</span> <span class="bu">Integer</span><span class="op">&gt;</span> m <span class="op">=</span> <span class="kw">new</span> <span class="bu">HashMap</span><span class="op">&lt;&gt;();</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> <span class="op">(</span><span class="dt">int</span> i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> i <span class="op">&lt;</span> nums<span class="op">.</span><span class="fu">length</span><span class="op">;</span> i<span class="op">++)</span> <span class="op">{</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="op">(</span>m<span class="op">.</span><span class="fu">containsKey</span><span class="op">(</span>target <span class="op">-</span> nums<span class="op">[</span>i<span class="op">]))</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> <span class="kw">new</span> <span class="dt">int</span><span class="op">[]{</span> m<span class="op">.</span><span class="fu">get</span><span class="op">(</span>target <span class="op">-</span> nums<span class="op">[</span>i<span class="op">]),</span> i <span class="op">};</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>        m<span class="op">.</span><span class="fu">put</span><span class="op">(</span>nums<span class="op">[</span>i<span class="op">],</span> i<span class="op">);</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="kw">new</span> <span class="dt">int</span><span class="op">[]{};</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div>
+<p><strong>122.</strong> 反转单链表。</p>
+<div class="sourceCode" id="cb3"><pre
+class="sourceCode java"><code class="sourceCode java"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">public</span> ListNode <span class="fu">reverse</span><span class="op">(</span>ListNode head<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    ListNode prev <span class="op">=</span> <span class="kw">null</span><span class="op">,</span> cur <span class="op">=</span> head<span class="op">;</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> <span class="op">(</span>cur <span class="op">!=</span> <span class="kw">null</span><span class="op">)</span> <span class="op">{</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>        ListNode nxt <span class="op">=</span> cur<span class="op">.</span><span class="fu">next</span><span class="op">;</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>        cur<span class="op">.</span><span class="fu">next</span> <span class="op">=</span> prev<span class="op">;</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>        prev <span class="op">=</span> cur<span class="op">;</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>        cur <span class="op">=</span> nxt<span class="op">;</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> prev<span class="op">;</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div>
+<p><strong>123.</strong> 最大子数组和（LeetCode 53）。</p>
+<div class="sourceCode" id="cb4"><pre
+class="sourceCode java"><code class="sourceCode java"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">public</span> <span class="dt">int</span> <span class="fu">maxSubArray</span><span class="op">(</span><span class="dt">int</span><span class="op">[]</span> a<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    <span class="dt">int</span> max <span class="op">=</span> <span class="bu">Integer</span><span class="op">.</span><span class="fu">MIN_VALUE</span><span class="op">,</span> cur <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> <span class="op">(</span><span class="dt">int</span> x <span class="op">:</span> a<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>        cur <span class="op">=</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">max</span><span class="op">(</span>x<span class="op">,</span> cur <span class="op">+</span> x<span class="op">);</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>        max <span class="op">=</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">max</span><span class="op">(</span>max<span class="op">,</span> cur<span class="op">);</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> max<span class="op">;</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div>
+<p><strong>124.</strong> 买卖股票的最佳时机（LeetCode
+121，姊妹单位一面原题）。</p>
+<div class="sourceCode" id="cb5"><pre
+class="sourceCode java"><code class="sourceCode java"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">public</span> <span class="dt">int</span> <span class="fu">maxProfit</span><span class="op">(</span><span class="dt">int</span><span class="op">[]</span> prices<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="dt">int</span> minPrice <span class="op">=</span> <span class="bu">Integer</span><span class="op">.</span><span class="fu">MAX_VALUE</span><span class="op">,</span> profit <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> <span class="op">(</span><span class="dt">int</span> p <span class="op">:</span> prices<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>        minPrice <span class="op">=</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">min</span><span class="op">(</span>minPrice<span class="op">,</span> p<span class="op">);</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>        profit <span class="op">=</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">max</span><span class="op">(</span>profit<span class="op">,</span> p <span class="op">-</span> minPrice<span class="op">);</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> profit<span class="op">;</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div>
+<p><strong>125.</strong> 合并区间（LeetCode 56，姊妹单位一面原题）。</p>
+<div class="sourceCode" id="cb6"><pre
+class="sourceCode java"><code class="sourceCode java"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="kw">public</span> <span class="dt">int</span><span class="op">[][]</span> <span class="fu">merge</span><span class="op">(</span><span class="dt">int</span><span class="op">[][]</span> intervals<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">Arrays</span><span class="op">.</span><span class="fu">sort</span><span class="op">(</span>intervals<span class="op">,</span> <span class="op">(</span>x<span class="op">,</span> y<span class="op">)</span> <span class="op">-&gt;</span> x<span class="op">[</span><span class="dv">0</span><span class="op">]</span> <span class="op">-</span> y<span class="op">[</span><span class="dv">0</span><span class="op">]);</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">List</span><span class="op">&lt;</span><span class="dt">int</span><span class="op">[]&gt;</span> res <span class="op">=</span> <span class="kw">new</span> <span class="bu">ArrayList</span><span class="op">&lt;&gt;();</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> <span class="op">(</span><span class="dt">int</span><span class="op">[]</span> it <span class="op">:</span> intervals<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="op">(</span>res<span class="op">.</span><span class="fu">isEmpty</span><span class="op">()</span> <span class="op">||</span> res<span class="op">.</span><span class="fu">get</span><span class="op">(</span>res<span class="op">.</span><span class="fu">size</span><span class="op">()-</span><span class="dv">1</span><span class="op">)[</span><span class="dv">1</span><span class="op">]</span> <span class="op">&lt;</span> it<span class="op">[</span><span class="dv">0</span><span class="op">])</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>            res<span class="op">.</span><span class="fu">add</span><span class="op">(</span>it<span class="op">);</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>            res<span class="op">.</span><span class="fu">get</span><span class="op">(</span>res<span class="op">.</span><span class="fu">size</span><span class="op">()-</span><span class="dv">1</span><span class="op">)[</span><span class="dv">1</span><span class="op">]</span> <span class="op">=</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">max</span><span class="op">(</span>res<span class="op">.</span><span class="fu">get</span><span class="op">(</span>res<span class="op">.</span><span class="fu">size</span><span class="op">()-</span><span class="dv">1</span><span class="op">)[</span><span class="dv">1</span><span class="op">],</span> it<span class="op">[</span><span class="dv">1</span><span class="op">]);</span></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> res<span class="op">.</span><span class="fu">toArray</span><span class="op">(</span><span class="kw">new</span> <span class="dt">int</span><span class="op">[</span><span class="dv">0</span><span class="op">][]);</span></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div>
+<p><strong>126.</strong> 接雨水（LeetCode 42，姊妹单位一面原题）。</p>
+<div class="sourceCode" id="cb7"><pre
+class="sourceCode java"><code class="sourceCode java"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="kw">public</span> <span class="dt">int</span> <span class="fu">trap</span><span class="op">(</span><span class="dt">int</span><span class="op">[]</span> h<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>    <span class="dt">int</span> l <span class="op">=</span> <span class="dv">0</span><span class="op">,</span> r <span class="op">=</span> h<span class="op">.</span><span class="fu">length</span> <span class="op">-</span> <span class="dv">1</span><span class="op">,</span> lo <span class="op">=</span> <span class="dv">0</span><span class="op">,</span> hi <span class="op">=</span> <span class="dv">0</span><span class="op">,</span> ans <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> <span class="op">(</span>l <span class="op">&lt;</span> r<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>        lo <span class="op">=</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">max</span><span class="op">(</span>lo<span class="op">,</span> h<span class="op">[</span>l<span class="op">]);</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>        hi <span class="op">=</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">max</span><span class="op">(</span>hi<span class="op">,</span> h<span class="op">[</span>r<span class="op">]);</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="op">(</span>lo <span class="op">&lt;</span> hi<span class="op">)</span> ans <span class="op">+=</span> lo <span class="op">-</span> h<span class="op">[</span>l<span class="op">++];</span></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span>         ans <span class="op">+=</span> hi <span class="op">-</span> h<span class="op">[</span>r<span class="op">--];</span></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> ans<span class="op">;</span></span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div>
+<p><strong>127.</strong> 有效的括号（LeetCode 20）。</p>
+<div class="sourceCode" id="cb8"><pre
+class="sourceCode java"><code class="sourceCode java"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="kw">public</span> <span class="dt">boolean</span> <span class="fu">isValid</span><span class="op">(</span><span class="bu">String</span> s<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">Deque</span><span class="op">&lt;</span><span class="bu">Character</span><span class="op">&gt;</span> st <span class="op">=</span> <span class="kw">new</span> <span class="bu">ArrayDeque</span><span class="op">&lt;&gt;();</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> <span class="op">(</span><span class="dt">char</span> c <span class="op">:</span> s<span class="op">.</span><span class="fu">toCharArray</span><span class="op">())</span> <span class="op">{</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="op">(</span>c <span class="op">==</span> <span class="ch">&#39;(&#39;</span> <span class="op">||</span> c <span class="op">==</span> <span class="ch">&#39;[&#39;</span> <span class="op">||</span> c <span class="op">==</span> <span class="ch">&#39;{&#39;</span><span class="op">)</span> st<span class="op">.</span><span class="fu">push</span><span class="op">(</span>c<span class="op">);</span></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span> <span class="op">{</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> <span class="op">(</span>st<span class="op">.</span><span class="fu">isEmpty</span><span class="op">())</span> <span class="cf">return</span> <span class="kw">false</span><span class="op">;</span></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>            <span class="dt">char</span> t <span class="op">=</span> st<span class="op">.</span><span class="fu">pop</span><span class="op">();</span></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> <span class="op">((</span>c <span class="op">==</span> <span class="ch">&#39;)&#39;</span> <span class="op">&amp;&amp;</span> t <span class="op">!=</span> <span class="ch">&#39;(&#39;</span><span class="op">)</span> <span class="op">||</span> <span class="op">(</span>c <span class="op">==</span> <span class="ch">&#39;]&#39;</span> <span class="op">&amp;&amp;</span> t <span class="op">!=</span> <span class="ch">&#39;[&#39;</span><span class="op">)</span> <span class="op">||</span> <span class="op">(</span>c <span class="op">==</span> <span class="ch">&#39;}&#39;</span> <span class="op">&amp;&amp;</span> t <span class="op">!=</span> <span class="ch">&#39;{&#39;</span><span class="op">))</span> <span class="cf">return</span> <span class="kw">false</span><span class="op">;</span></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>        <span class="op">}</span></span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> st<span class="op">.</span><span class="fu">isEmpty</span><span class="op">();</span></span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div>
+<p><strong>128.</strong> 二分查找（有序数组）。</p>
+<div class="sourceCode" id="cb9"><pre
+class="sourceCode java"><code class="sourceCode java"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="kw">public</span> <span class="dt">int</span> <span class="fu">binarySearch</span><span class="op">(</span><span class="dt">int</span><span class="op">[]</span> a<span class="op">,</span> <span class="dt">int</span> x<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>    <span class="dt">int</span> l <span class="op">=</span> <span class="dv">0</span><span class="op">,</span> r <span class="op">=</span> a<span class="op">.</span><span class="fu">length</span> <span class="op">-</span> <span class="dv">1</span><span class="op">;</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> <span class="op">(</span>l <span class="op">&lt;=</span> r<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>        <span class="dt">int</span> m <span class="op">=</span> l <span class="op">+</span> <span class="op">(</span>r <span class="op">-</span> l<span class="op">)</span> <span class="op">/</span> <span class="dv">2</span><span class="op">;</span></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="op">(</span>a<span class="op">[</span>m<span class="op">]</span> <span class="op">==</span> x<span class="op">)</span> <span class="cf">return</span> m<span class="op">;</span></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span> <span class="cf">if</span> <span class="op">(</span>a<span class="op">[</span>m<span class="op">]</span> <span class="op">&lt;</span> x<span class="op">)</span> l <span class="op">=</span> m <span class="op">+</span> <span class="dv">1</span><span class="op">;</span></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span> r <span class="op">=</span> m <span class="op">-</span> <span class="dv">1</span><span class="op">;</span></span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="op">-</span><span class="dv">1</span><span class="op">;</span></span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div>
+<p><strong>129.</strong> 二叉树层序遍历（BFS）。</p>
+<div class="sourceCode" id="cb10"><pre
+class="sourceCode java"><code class="sourceCode java"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="kw">public</span> <span class="bu">List</span><span class="op">&lt;</span><span class="bu">List</span><span class="op">&lt;</span><span class="bu">Integer</span><span class="op">&gt;&gt;</span> <span class="fu">levelOrder</span><span class="op">(</span><span class="bu">TreeNode</span> root<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">List</span><span class="op">&lt;</span><span class="bu">List</span><span class="op">&lt;</span><span class="bu">Integer</span><span class="op">&gt;&gt;</span> res <span class="op">=</span> <span class="kw">new</span> <span class="bu">ArrayList</span><span class="op">&lt;&gt;();</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="op">(</span>root <span class="op">==</span> <span class="kw">null</span><span class="op">)</span> <span class="cf">return</span> res<span class="op">;</span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">Queue</span><span class="op">&lt;</span><span class="bu">TreeNode</span><span class="op">&gt;</span> q <span class="op">=</span> <span class="kw">new</span> <span class="bu">LinkedList</span><span class="op">&lt;&gt;();</span></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>    q<span class="op">.</span><span class="fu">offer</span><span class="op">(</span>root<span class="op">);</span></span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> <span class="op">(!</span>q<span class="op">.</span><span class="fu">isEmpty</span><span class="op">())</span> <span class="op">{</span></span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>        <span class="dt">int</span> n <span class="op">=</span> q<span class="op">.</span><span class="fu">size</span><span class="op">();</span></span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>        <span class="bu">List</span><span class="op">&lt;</span><span class="bu">Integer</span><span class="op">&gt;</span> level <span class="op">=</span> <span class="kw">new</span> <span class="bu">ArrayList</span><span class="op">&lt;&gt;();</span></span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> <span class="op">(</span><span class="dt">int</span> i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> i <span class="op">&lt;</span> n<span class="op">;</span> i<span class="op">++)</span> <span class="op">{</span></span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>            <span class="bu">TreeNode</span> cur <span class="op">=</span> q<span class="op">.</span><span class="fu">poll</span><span class="op">();</span></span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>            level<span class="op">.</span><span class="fu">add</span><span class="op">(</span>cur<span class="op">.</span><span class="fu">val</span><span class="op">);</span></span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> <span class="op">(</span>cur<span class="op">.</span><span class="fu">left</span> <span class="op">!=</span> <span class="kw">null</span><span class="op">)</span> q<span class="op">.</span><span class="fu">offer</span><span class="op">(</span>cur<span class="op">.</span><span class="fu">left</span><span class="op">);</span></span>
+<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> <span class="op">(</span>cur<span class="op">.</span><span class="fu">right</span> <span class="op">!=</span> <span class="kw">null</span><span class="op">)</span> q<span class="op">.</span><span class="fu">offer</span><span class="op">(</span>cur<span class="op">.</span><span class="fu">right</span><span class="op">);</span></span>
+<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a>        <span class="op">}</span></span>
+<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a>        res<span class="op">.</span><span class="fu">add</span><span class="op">(</span>level<span class="op">);</span></span>
+<span id="cb10-16"><a href="#cb10-16" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb10-17"><a href="#cb10-17" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> res<span class="op">;</span></span>
+<span id="cb10-18"><a href="#cb10-18" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div>
+<p><strong>130.</strong> 爬楼梯（LeetCode 70，动态规划）。</p>
+<div class="sourceCode" id="cb11"><pre
+class="sourceCode java"><code class="sourceCode java"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="kw">public</span> <span class="dt">int</span> <span class="fu">climbStairs</span><span class="op">(</span><span class="dt">int</span> n<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="op">(</span>n <span class="op">&lt;=</span> <span class="dv">2</span><span class="op">)</span> <span class="cf">return</span> n<span class="op">;</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>    <span class="dt">int</span> a <span class="op">=</span> <span class="dv">1</span><span class="op">,</span> b <span class="op">=</span> <span class="dv">2</span><span class="op">;</span></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> <span class="op">(</span><span class="dt">int</span> i <span class="op">=</span> <span class="dv">3</span><span class="op">;</span> i <span class="op">&lt;=</span> n<span class="op">;</span> i<span class="op">++)</span> <span class="op">{</span></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>        <span class="dt">int</span> c <span class="op">=</span> a <span class="op">+</span> b<span class="op">;</span></span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>        a <span class="op">=</span> b<span class="op">;</span></span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>        b <span class="op">=</span> c<span class="op">;</span></span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> b<span class="op">;</span></span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div>
+</body>
+</html>
