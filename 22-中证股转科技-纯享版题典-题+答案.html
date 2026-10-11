@@ -1,405 +1,103 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="zh-CN">
 <head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>22-中证股转科技-纯享版题典-题+答案</title>
-  <style>
-    /* Default styles provided by pandoc.
-    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
-    */
-    html {
-      color: #1a1a1a;
-      background-color: #fdfdfd;
-    }
-    body {
-      margin: 0 auto;
-      max-width: 36em;
-      padding-left: 50px;
-      padding-right: 50px;
-      padding-top: 50px;
-      padding-bottom: 50px;
-      hyphens: auto;
-      overflow-wrap: break-word;
-      text-rendering: optimizeLegibility;
-      font-kerning: normal;
-    }
-    @media (max-width: 600px) {
-      body {
-        font-size: 0.9em;
-        padding: 12px;
-      }
-      h1 {
-        font-size: 1.8em;
-      }
-    }
-    @media print {
-      html {
-        background-color: white;
-      }
-      body {
-        background-color: transparent;
-        color: black;
-        font-size: 12pt;
-      }
-      p, h2, h3 {
-        orphans: 3;
-        widows: 3;
-      }
-      h2, h3, h4 {
-        page-break-after: avoid;
-      }
-    }
-    p {
-      margin: 1em 0;
-    }
-    a {
-      color: #1a1a1a;
-    }
-    a:visited {
-      color: #1a1a1a;
-    }
-    img {
-      max-width: 100%;
-    }
-    svg {
-      height: auto;
-      max-width: 100%;
-    }
-    h1, h2, h3, h4, h5, h6 {
-      margin-top: 1.4em;
-    }
-    h5, h6 {
-      font-size: 1em;
-      font-style: italic;
-    }
-    h6 {
-      font-weight: normal;
-    }
-    ol, ul {
-      padding-left: 1.7em;
-      margin-top: 1em;
-    }
-    li > ol, li > ul {
-      margin-top: 0;
-    }
-    blockquote {
-      margin: 1em 0 1em 1.7em;
-      padding-left: 1em;
-      border-left: 2px solid #e6e6e6;
-      color: #606060;
-    }
-    code {
-      white-space: pre-wrap;
-      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
-      font-size: 85%;
-      margin: 0;
-      hyphens: manual;
-    }
-    pre {
-      margin: 1em 0;
-      overflow: auto;
-    }
-    pre code {
-      padding: 0;
-      overflow: visible;
-      overflow-wrap: normal;
-    }
-    .sourceCode {
-     background-color: transparent;
-     overflow: visible;
-    }
-    hr {
-      border: none;
-      border-top: 1px solid #1a1a1a;
-      height: 1px;
-      margin: 1em 0;
-    }
-    table {
-      margin: 1em 0;
-      border-collapse: collapse;
-      width: 100%;
-      overflow-x: auto;
-      display: block;
-      font-variant-numeric: lining-nums tabular-nums;
-    }
-    table caption {
-      margin-bottom: 0.75em;
-    }
-    tbody {
-      margin-top: 0.5em;
-      border-top: 1px solid #1a1a1a;
-      border-bottom: 1px solid #1a1a1a;
-    }
-    th {
-      border-top: 1px solid #1a1a1a;
-      padding: 0.25em 0.5em 0.25em 0.5em;
-    }
-    td {
-      padding: 0.125em 0.5em 0.25em 0.5em;
-    }
-    header {
-      margin-bottom: 4em;
-      text-align: center;
-    }
-    #TOC li {
-      list-style: none;
-    }
-    #TOC ul {
-      padding-left: 1.3em;
-    }
-    #TOC > ul {
-      padding-left: 0;
-    }
-    #TOC a:not(:hover) {
-      text-decoration: none;
-    }
-    span.smallcaps{font-variant: small-caps;}
-    div.columns{display: flex; gap: min(4vw, 1.5em);}
-    div.column{flex: auto; overflow-x: auto;}
-    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    /* The extra [class] is a hack that increases specificity enough to
-       override a similar rule in reveal.js */
-    ul.task-list[class]{list-style: none;}
-    ul.task-list li input[type="checkbox"] {
-      font-size: inherit;
-      width: 0.8em;
-      margin: 0 0.8em 0.2em -1.6em;
-      vertical-align: middle;
-    }
-    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
-    /* CSS for syntax highlighting */
-    html { -webkit-text-size-adjust: 100%; }
-    pre > code.sourceCode { white-space: pre; position: relative; }
-    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-    pre > code.sourceCode > span:empty { height: 1.2em; }
-    .sourceCode { overflow: visible; }
-    code.sourceCode > span { color: inherit; text-decoration: inherit; }
-    div.sourceCode { margin: 1em 0; }
-    pre.sourceCode { margin: 0; }
-    @media screen {
-    div.sourceCode { overflow: auto; }
-    }
-    @media print {
-    pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-    }
-    pre.numberSource code
-      { counter-reset: source-line 0; }
-    pre.numberSource code > span
-      { position: relative; left: -4em; counter-increment: source-line; }
-    pre.numberSource code > span > a:first-child::before
-      { content: counter(source-line);
-        position: relative; left: -1em; text-align: right; vertical-align: baseline;
-        border: none; display: inline-block;
-        -webkit-touch-callout: none; -webkit-user-select: none;
-        -khtml-user-select: none; -moz-user-select: none;
-        -ms-user-select: none; user-select: none;
-        padding: 0 4px; width: 4em;
-        color: #aaaaaa;
-      }
-    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-    div.sourceCode
-      {   }
-    @media screen {
-    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-    }
-    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-    code span.at { color: #7d9029; } /* Attribute */
-    code span.bn { color: #40a070; } /* BaseN */
-    code span.bu { color: #008000; } /* BuiltIn */
-    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-    code span.ch { color: #4070a0; } /* Char */
-    code span.cn { color: #880000; } /* Constant */
-    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-    code span.dt { color: #902000; } /* DataType */
-    code span.dv { color: #40a070; } /* DecVal */
-    code span.er { color: #ff0000; font-weight: bold; } /* Error */
-    code span.ex { } /* Extension */
-    code span.fl { color: #40a070; } /* Float */
-    code span.fu { color: #06287e; } /* Function */
-    code span.im { color: #008000; font-weight: bold; } /* Import */
-    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-    code span.op { color: #666666; } /* Operator */
-    code span.ot { color: #007020; } /* Other */
-    code span.pp { color: #bc7a00; } /* Preprocessor */
-    code span.sc { color: #4070a0; } /* SpecialChar */
-    code span.ss { color: #bb6688; } /* SpecialString */
-    code span.st { color: #4070a0; } /* String */
-    code span.va { color: #19177c; } /* Variable */
-    code span.vs { color: #4070a0; } /* VerbatimString */
-    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>22-中证股转科技-纯享版题典-题+答案</title>
+<style>
+  /* ===== 速备文档样式（pandoc -H 注入，一次到位含手机适配） ===== */
+  html { scroll-behavior: smooth; }
+  body {
+    max-width: 900px; margin: 0 auto; padding: 24px 20px 80px;
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    line-height: 1.9; color: #1f2328; background: #fff;
+    font-size: 16.5px;
+  }
+  h1 { font-size: 1.6em; border-bottom: 3px solid #c8102e; padding-bottom: 10px; line-height: 1.4; }
+  h2 { font-size: 1.32em; margin-top: 2em; border-left: 6px solid #c8102e; padding-left: 10px; }
+  h3 { font-size: 1.12em; margin-top: 1.6em; color: #8c1d2a; }
+  a { color: #0a5396; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  blockquote {
+    background: #fff8dc; border-left: 5px solid #e8b931;
+    margin: 0.8em 0; padding: 10px 16px; border-radius: 6px;
+    color: #443c14;
+  }
+  blockquote p { margin: 0.5em 0; }
+  table { border-collapse: collapse; width: 100%; margin: 1em 0; font-size: 0.93em; }
+  th { background: #fdecea; }
+  th, td { border: 1px solid #d9a0a0; padding: 7px 10px; text-align: left; }
+  tr:nth-child(even) td { background: #faf7f7; }
+  code { background: #f5f2ed; color: #8c3d00; padding: 1px 5px; border-radius: 4px; font-size: 0.9em; }
+  pre { background: #f5f7fa; color: #1f2328; border: 1px solid #e0e4ea; border-radius: 8px; padding: 12px; overflow-x: auto; }
+  pre code { background: none; color: inherit; padding: 0; }
+  hr { border: none; border-top: 1px dashed #c9c9c9; margin: 1.6em 0; }
+  /* ===== 可点击目录 ===== */
+  nav#TOC { background: #f7f4ef; border: 1px solid #e0d8c8; border-radius: 10px; padding: 14px 18px 14px 10px; }
+  nav#TOC::before { content: "📑 目录（点标题直达）"; display: block; font-weight: 700; font-size: 1.1em; padding-bottom: 6px; margin-left: 8px; }
+  nav#TOC ul { list-style: none; padding-left: 14px; margin: 4px 0; }
+  nav#TOC li { margin: 3px 0; }
+  nav#TOC a { display: block; padding: 2px 6px; border-radius: 5px; }
+  nav#TOC a:hover { background: #fdecea; text-decoration: none; }
+  /* ===== 悬浮返回目录按钮 ===== */
+  .back-toc {
+    position: fixed; bottom: 22px; right: 22px; z-index: 999;
+    background: #c8102e; color: #fff; border-radius: 50%;
+    width: 52px; height: 52px; line-height: 52px; text-align: center;
+    font-size: 22px; box-shadow: 0 4px 12px rgba(0,0,0,.25);
+  }
+  .back-toc:hover { background: #a50d24; color: #fff; text-decoration: none; }
+  /* ===== 手机适配 ===== */
+  @media (max-width: 640px) {
+    body { padding: 12px 12px 90px; font-size: 15.5px; }
+    h1 { font-size: 1.35em; }
+    h2 { font-size: 1.18em; padding-left: 8px; border-left-width: 4px; }
+    table { display: block; overflow-x: scroll; white-space: nowrap; font-size: 0.85em; -webkit-overflow-scrolling: touch; }
+    pre { white-space: pre-wrap; word-break: break-all; font-size: 0.85em; }
+    blockquote { padding: 8px 12px; }
+    .back-toc { width: 46px; height: 46px; line-height: 46px; font-size: 19px; bottom: 16px; right: 16px; }
+  }
   </style>
-  <style>
-      /* Default styles provided by pandoc.
-      ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
-      */
-      html {
-        color: #1a1a1a;
-        background-color: #fdfdfd;
-      }
-      body {
-        margin: 0 auto;
-        max-width: 36em;
-        padding-left: 50px;
-        padding-right: 50px;
-        padding-top: 50px;
-        padding-bottom: 50px;
-        hyphens: auto;
-        overflow-wrap: break-word;
-        text-rendering: optimizeLegibility;
-        font-kerning: normal;
-      }
-      @media (max-width: 600px) {
-        body {
-          font-size: 0.9em;
-          padding: 12px;
-        }
-        h1 {
-          font-size: 1.8em;
-        }
-      }
-      @media print {
-        html {
-          background-color: white;
-        }
-        body {
-          background-color: transparent;
-          color: black;
-          font-size: 12pt;
-        }
-        p, h2, h3 {
-          orphans: 3;
-          widows: 3;
-        }
-        h2, h3, h4 {
-          page-break-after: avoid;
-        }
-      }
-      p {
-        margin: 1em 0;
-      }
-      a {
-        color: #1a1a1a;
-      }
-      a:visited {
-        color: #1a1a1a;
-      }
-      img {
-        max-width: 100%;
-      }
-      svg {
-        height: auto;
-        max-width: 100%;
-      }
-      h1, h2, h3, h4, h5, h6 {
-        margin-top: 1.4em;
-      }
-      h5, h6 {
-        font-size: 1em;
-        font-style: italic;
-      }
-      h6 {
-        font-weight: normal;
-      }
-      ol, ul {
-        padding-left: 1.7em;
-        margin-top: 1em;
-      }
-      li > ol, li > ul {
-        margin-top: 0;
-      }
-      blockquote {
-        margin: 1em 0 1em 1.7em;
-        padding-left: 1em;
-        border-left: 2px solid #e6e6e6;
-        color: #606060;
-      }
-      code {
-        white-space: pre-wrap;
-        font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
-        font-size: 85%;
-        margin: 0;
-        hyphens: manual;
-      }
-      pre {
-        margin: 1em 0;
-        overflow: auto;
-      }
-      pre code {
-        padding: 0;
-        overflow: visible;
-        overflow-wrap: normal;
-      }
-      .sourceCode {
-       background-color: transparent;
-       overflow: visible;
-      }
-      hr {
-        border: none;
-        border-top: 1px solid #1a1a1a;
-        height: 1px;
-        margin: 1em 0;
-      }
-      table {
-        margin: 1em 0;
-        border-collapse: collapse;
-        width: 100%;
-        overflow-x: auto;
-        display: block;
-        font-variant-numeric: lining-nums tabular-nums;
-      }
-      table caption {
-        margin-bottom: 0.75em;
-      }
-      tbody {
-        margin-top: 0.5em;
-        border-top: 1px solid #1a1a1a;
-        border-bottom: 1px solid #1a1a1a;
-      }
-      th {
-        border-top: 1px solid #1a1a1a;
-        padding: 0.25em 0.5em 0.25em 0.5em;
-      }
-      td {
-        padding: 0.125em 0.5em 0.25em 0.5em;
-      }
-      header {
-        margin-bottom: 4em;
-        text-align: center;
-      }
-      #TOC li {
-        list-style: none;
-      }
-      #TOC ul {
-        padding-left: 1.3em;
-      }
-      #TOC > ul {
-        padding-left: 0;
-      }
-      #TOC a:not(:hover) {
-        text-decoration: none;
-      }
-      span.smallcaps{font-variant: small-caps;}
-      div.columns{display: flex; gap: min(4vw, 1.5em);}
-      div.column{flex: auto; overflow-x: auto;}
-      div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-      /* The extra [class] is a hack that increases specificity enough to
-         override a similar rule in reveal.js */
-      ul.task-list[class]{list-style: none;}
-      ul.task-list li input[type="checkbox"] {
-        font-size: inherit;
-        width: 0.8em;
-        margin: 0 0.8em 0.2em -1.6em;
-        vertical-align: middle;
-      }
-      .display.math{display: block; text-align: center; margin: 0.5rem auto;}
-    </style>
+<style>
+  /* ===== 题典专属样式（在母版之上追加） ===== */
+  body { background:#f4f5f7; }
+  .doc-nav { background:#8c1d2a; padding:10px 16px; border-radius:0 0 10px 10px; margin-bottom:24px; }
+  .doc-nav-inner { max-width:920px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; }
+  .doc-nav-back { color:#fff; text-decoration:none; font-size:.9em; opacity:.92; }
+  .doc-nav-back:hover { text-decoration:underline; }
+  .doc-nav-title { color:#fff; font-weight:600; font-size:.95em; }
+  .quiz { max-width:920px; margin:0 auto; padding:0 16px 80px; }
+  .quiz > h1 { font-size:1.7em; color:#8c1d2a; margin:.2em 0 .25em; text-align:center; }
+  .lead { text-align:center; color:#6b6b6b; margin:0 0 1.6em; font-size:.98em; }
+  #TOC { background:#f7f4ef; border:1px solid #e0d8c8; border-radius:10px; padding:14px 20px; margin:0 0 2em; }
+  .toc-title { font-weight:700; color:#8c1d2a; margin:0 0 .55em; }
+  #TOC ul { list-style:none; margin:0; padding:0; }
+  #TOC li { padding:3px 0; }
+  .toc-sec { font-weight:600; }
+  .toc-sub { padding-left:1.3em; font-size:.94em; color:#4a4a4a; }
+  #TOC a { color:#0a5396; text-decoration:none; }
+  #TOC a:hover { text-decoration:underline; }
+  .section-title { font-size:1.32em; color:#8c1d2a; border-bottom:3px solid #8c1d2a; padding-bottom:.22em; margin:1.9em 0 .7em; }
+  .q-card { background:#fff; border:1px solid #e6e6e6; border-radius:12px; padding:16px 18px; margin:14px 0; box-shadow:0 1px 3px rgba(0,0,0,.05); }
+  .q-card:hover { border-color:#d9c3c7; }
+  .q-head { display:flex; align-items:flex-start; gap:12px; }
+  .q-no { flex:0 0 auto; min-width:34px; height:34px; line-height:34px; text-align:center; background:#c8102e; color:#fff; border-radius:8px; font-weight:700; font-size:.95em; }
+  .q-stem { flex:1; font-size:1.02em; line-height:1.8; margin:0; }
+  .q-stem code { background:#f5f2ed; color:#8c3d00; padding:1px 5px; border-radius:4px; font-size:.9em; }
+  .opts { display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-top:12px; }
+  .opt { background:#fafafa; border:1px solid #ececec; border-radius:7px; padding:8px 11px; font-size:.96em; line-height:1.65; }
+  .opt-lbl { font-weight:700; color:#0a5396; margin-right:5px; }
+  .ans { margin-top:12px; background:#eafaf0; border-left:4px solid #2e9e5b; border-radius:0 8px 8px 0; padding:10px 14px; }
+  .ans-label { display:inline-block; font-weight:700; color:#1f7a45; margin:0 6px 8px 0; background:#d6f3e1; border-radius:5px; padding:1px 9px; font-size:.9em; }
+  .hint { margin-top:10px; background:#f7f4ef; border-left:4px solid #e8b931; border-radius:0 8px 8px 0; padding:8px 14px; font-size:.95em; }
+  .hint-label { font-weight:700; color:#8c1d2a; margin-right:5px; }
+  .material { background:#f0f6ff; border-left:4px solid #0a5396; border-radius:0 8px 8px 0; padding:10px 14px; margin:12px 0; font-size:.97em; }
+  pre.code-block { background:#f5f7fa; color:#1f2328; border:1px solid #e0e4ea; border-radius:8px; padding:12px 14px; overflow-x:auto; margin-top:10px; }
+  pre.code-block code { background:none; color:inherit; padding:0; font-size:.9em; line-height:1.55; }
+  pre.code-block::before { content:attr(data-lang); display:block; font-size:.72em; color:#8a94a6; margin-bottom:6px; text-transform:uppercase; letter-spacing:.06em; }
+  blockquote.note { background:#fff8dc; border-left:5px solid #e8b931; border-radius:0 8px 8px 0; padding:10px 16px; color:#443c14; margin:1em 0; }
+  @media (max-width:640px) { .opts { grid-template-columns:1fr; } .quiz > h1 { font-size:1.4em; } }
+</style>
 </head>
 <body>
 <header class="doc-nav">
@@ -408,446 +106,1199 @@
     <span class="doc-nav-title">面试备战 · 李方好</span>
   </div>
 </header>
-<nav id="TOC" role="doc-toc">
-<ul>
-<li><a href="#中证股转科技-信息技术岗笔试-纯享版题典题-答案"
-id="toc-中证股转科技-信息技术岗笔试-纯享版题典题-答案">中证股转科技 ·
-信息技术岗笔试 — 纯享版题典（题 + 答案）</a>
-<ul>
-<li><a href="#一综合能力-行测" id="toc-一综合能力-行测">一、综合能力 /
-行测</a></li>
-<li><a href="#二计算机专业"
-id="toc-二计算机专业">二、计算机专业</a></li>
-<li><a href="#三编程题机考手写非-oj无自动补全"
-id="toc-三编程题机考手写非-oj无自动补全">三、编程题（机考手写，非
-OJ、无自动补全）</a></li>
-</ul></li>
-</ul>
-</nav>
-<h1 id="中证股转科技-信息技术岗笔试-纯享版题典题-答案">中证股转科技 ·
-信息技术岗笔试 — 纯享版题典（题 + 答案）</h1>
-<blockquote>
-<p>依据中证股转及姊妹单位（中证登等）公开笔经题型规律整理的高频模拟/预测题，非官方真题，附答案供冲刺背诵。题型为金融科技
-IT 岗标准三段式：行测 → 计算机专业 → 手写编程。</p>
-</blockquote>
-<h2 id="一综合能力-行测">一、综合能力 / 行测</h2>
-<h3 id="言语理解与表达">1. 言语理解与表达</h3>
-<p><strong>1.</strong>
-依次填入横线处最恰当的一项是：儒家强调“________”，主张将心比心；道家追求“________”，倡导顺应自然、不妄为。
-A. 推己及人 / 无为而治　B. 见贤思齐 / 顺其自然　C. 克己复礼 /
-清净无为　D. 三省吾身 / 道法自然 <strong>答案：A</strong></p>
-<p><strong>2.</strong> 下列句子没有语病的一项是： A.
-通过本次培训，使我的业务能力有了很大提升。 B.
-能否保持清正廉洁，是干部合格的重要标准。 C.
-我国高铁运营里程稳居世界第一，已超过 4 万公里。 D.
-为了防止不发生类似事故，公司完善了制度。 <strong>答案：C</strong>（A
-缺主语；B 两面对一面；D 否定失当）</p>
-<p><strong>3.</strong>
-对下面这段文字概括最准确的是：“金融科技的本质是金融，技术是手段。脱离风控的技术创新如同无根之木。任何金融活动都必须纳入监管框架。”
-A. 金融科技将取代传统金融　B. 技术驱动下监管需跟上创新 C.
-风控是底线，技术须服从监管与风控　D. 监管会扼制创新
-<strong>答案：C</strong></p>
-<p><strong>4.</strong> 语句排序：①
-它不仅改变了支付方式，也重塑了商业生态 ② 移动支付在中国的发展世界领先 ③
-从二维码到刷脸，技术迭代迅速 ④ 这正是技术创新与市场需求共振的结果 A.
-②③④①　B. ②③①④　C. ①③②④　D. ②①③④ <strong>答案：B</strong></p>
-<p><strong>5.</strong> 面对复杂市场环境，企业不能
-________，必须未雨绸缪。 A. 临渴掘井　B. 居安思危　C. 防患未然　D.
-高枕无忧 <strong>答案：A</strong>（与“未雨绸缪”正反相对）</p>
-<p><strong>6.</strong> 下列句子中成语使用不正确的一项是： A.
-这篇论文见解独到，真可谓不刊之论。 B.
-他做的报告汗牛充栋，听众却昏昏欲睡。 C. 面对质疑，他侃侃而谈，从容不迫。
-D. 这部作品文不加点，一气呵成。
-<strong>答案：B</strong>（汗牛充栋形容书籍极多，不能形容报告）</p>
-<p><strong>7.</strong>
-对下面这段文字概括最准确的是：“数字经济不是虚拟经济，而是实体经济的数字化升级。它既包含数字产业化，也包含产业数字化。推动数字经济与实体经济深度融合，是高质量发展的必由之路。”
-A. 数字经济是虚拟经济　B. 数字经济将取代实体经济 C.
-数字经济与实体经济融合是高质量发展必由之路　D. 产业数字化不重要
-<strong>答案：C</strong></p>
-<p><strong>8.</strong> 语句排序：① 数据已成为关键生产要素 ②
-数字技术的发展使其价值凸显 ③ 各国纷纷布局数字经济 ④
-谁掌握数据谁就掌握未来 A. ①②③④　B. ②①③④　C. ①③②④　D. ②①④③
-<strong>答案：A</strong></p>
-<p><strong>9.</strong> 在推进改革的过程中，我们要
-________，不能眉毛胡子一把抓。 A. 统筹兼顾　B. 各行其是　C. 独善其身　D.
-墨守成规 <strong>答案：A</strong></p>
-<p><strong>10.</strong> 下列句子没有语病的一项是： A.
-由于天气原因，使航班延误。 B. 他的事迹对于我们是陌生的。 C.
-这款产品深受用户所欢迎。 D. 经过努力，他终于取得了成功。
-<strong>答案：D</strong>（A 缺主语；B 主客颠倒；C “深受……所”杂糅）</p>
-<h3 id="数量关系">2. 数量关系</h3>
-<p><strong>11.</strong> 甲单独做需 10 天，乙单独做需 15
-天，两人合作需几天？ A. 5　B. 6　C. 7　D. 8
-<strong>答案：B</strong>（1÷(1/10+1/15)=6）</p>
-<p><strong>12.</strong> A、B 相距 120km，甲以 40km/h 先出发 1 小时，乙以
-60km/h 从同地追，几小时追上？ A. 2　B. 3　C. 4　D. 5
-<strong>答案：A</strong>（40÷(60−40)=2）</p>
-<p><strong>13.</strong> 从 5 男 3 女中选 3 人，至少 1 女，有几种？
-<strong>答案：46</strong>（C(8,3)−C(5,3)=56−10）</p>
-<p><strong>14.</strong> 掷两枚均匀骰子，点数和 &gt; 9 的概率？
-<strong>答案：1/6</strong>（(4,6)(5,5)(6,4)(5,6)(6,5)(6,6) 共 6 种 /
-36）</p>
-<p><strong>15.</strong> 数字推理：2, 6, 12, 20, 30, ? A. 36　B. 40　C.
-42　D. 44 <strong>答案：C</strong>（n(n+1)）</p>
-<p><strong>16.</strong> 一件商品成本 100 元，按标价 8 折出售仍获利
-20%，标价是多少元？ <strong>答案：150</strong>（0.8x=120 → x=150）</p>
-<p><strong>17.</strong> 100g 浓度为 10% 的盐水加入 10g 盐，新浓度约？
-<strong>答案：18.2%</strong>（(10+10)/(100+10)≈18.2%）</p>
-<p><strong>18.</strong> 父子年龄和 60 岁，5 年前父是子的 4
-倍，现在父子各几岁？ <strong>答案：子 15 岁，父 45 岁</strong>（设子
-x：55−x=4(x−5) → x=15）</p>
-<p><strong>19.</strong> 一条路长 100 米，每隔 10
-米种一棵（两端都种），共几棵？ <strong>答案：11</strong>（100/10+1）</p>
-<p><strong>20.</strong> 数字推理：1, 1, 2, 3, 5, 8, ?
-<strong>答案：13</strong>（斐波那契数列）</p>
-<h3 id="判断推理">3. 判断推理</h3>
-<p><strong>21.</strong> 有人认为“多刷题就能通过笔试”，最能削弱的是： A.
-有人刷很多题仍没通过　B. 笔试还考查心态与知识迁移，刷题无法覆盖 C.
-刷题能熟悉题型　D. 历年题重复率高 <strong>答案：B</strong></p>
-<p><strong>22.</strong> 图形推理（规律描述）：每幅图黑点数量依次为
-1、2、3、4，则第 5 幅有几个？ <strong>答案：5</strong></p>
-<p><strong>23.</strong> 类比：程序员：代码 = 作家：？ A. 小说　B. 笔　C.
-读者　D. 出版社 <strong>答案：A</strong>（产出物）</p>
-<p><strong>24.</strong> 下列属于“沉没成本”的是： A. 已花 3000
-元买的不可退培训，决策是否继续时这 3000 元 B. 未来要交的房租　C.
-预计的奖金　D. 下月水电费
-<strong>答案：A</strong>（已发生且不可收回）</p>
-<p><strong>25.</strong> 已知“下雨 → 地湿”，现知“地湿”，能否推出“下雨”？
-A. 能　B. 不能　C. 有时能　D. 视情况
-<strong>答案：B</strong>（肯定后件不能肯定前件）</p>
-<p><strong>26.</strong> 下列能加强“读书能提升认知”的是： A.
-研究显示阅读量与认知测试得分正相关　B. 有人不读书也聪明 C.
-读书费时间　D. 书很贵 <strong>答案：A</strong></p>
-<p><strong>27.</strong> 类比：医生：医院 = 教师：？ A. 学校　B. 学生　C.
-课本　D. 教室 <strong>答案：A</strong>（职业与场所）</p>
-<p><strong>28.</strong> 图形推理（规律描述）：图形每次顺时针旋转 90°，第
-3 幅为横向，则第 4 幅为？ <strong>答案：纵向</strong>（再转 90°）</p>
-<p><strong>29.</strong> 所有 A 是 B，所有 B 是 C，则可推出？
-<strong>答案：所有 A 是 C</strong>（三段论传递）</p>
-<p><strong>30.</strong> “所有同学都及格了”的矛盾命题是？
-<strong>答案：有的同学没及格</strong></p>
-<h3 id="资料分析">4. 资料分析</h3>
-<p><strong>材料 1</strong>：某科技公司 2023
-年营收（亿元）：Q1=120，Q2=150，Q3=180，Q4=200；2022 全年 540。</p>
-<p><strong>31.</strong> 2023 全年营收？ <strong>答案：650 亿</strong>
-<strong>32.</strong> Q4 环比增速？
-<strong>答案：(200−180)/180≈11.1%</strong> <strong>33.</strong>
-上半年占全年比重？ <strong>答案：(120+150)/650≈41.5%</strong>
-<strong>34.</strong> 2023 同比增长率？
-<strong>答案：(650−540)/540≈20.4%</strong> <strong>35.</strong>
-哪一季环比增速最高？ <strong>答案：Q2（(150−120)/120=25%）</strong></p>
-<p><strong>材料 2</strong>：某银行 2023
-各季度不良贷款率：Q1=1.5%，Q2=1.4%，Q3=1.3%，Q4=1.2%；贷款总额 Q1=1000
-亿，每季递增 100 亿。</p>
-<p><strong>36.</strong> Q4 贷款总额？ <strong>答案：1300
-亿</strong>（1000+300） <strong>37.</strong>
-全年平均不良率（算术平均）？
-<strong>答案：(1.5+1.4+1.3+1.2)/4=1.35%</strong> <strong>38.</strong>
-不良率整体变化趋势？ <strong>答案：逐季下降</strong>
-<strong>39.</strong> Q3 不良贷款余额？ <strong>答案：1100×1.3%=14.3
-亿</strong> <strong>40.</strong> 全年不良贷款总额？
-<strong>答案：1000×1.5%+1100×1.4%+1200×1.3%+1300×1.2%=61.6
-亿</strong></p>
-<h2 id="二计算机专业">二、计算机专业</h2>
-<h3 id="数据结构与算法4160">5. 数据结构与算法（41–60）</h3>
-<p><strong>41.</strong> 平均时间复杂度最优的排序是？ A. 冒泡 O(n²)　B.
-快速 O(nlogn)　C. 插入 O(n²)　D. 选择 O(n²) <strong>答案：B</strong></p>
-<p><strong>42.</strong>（不定项）线性时间复杂度的排序有？ A. 计数　B.
-基数　C. 桶　D. 归并 <strong>答案：A、B、C</strong></p>
-<p><strong>43.</strong> 二叉树第 k 层最多节点数？
-<strong>答案：2^(k−1)</strong> <strong>44.</strong> 完全二叉树 200
-个节点，叶子节点数？ <strong>答案：100</strong> <strong>45.</strong>
-对二叉搜索树（BST）做中序遍历得到？
-<strong>答案：升序（有序）序列</strong>
-<strong>46.</strong>（不定项）哈希冲突解决方法有？ A. 开放定址法　B.
-链地址法　C. 再哈希法　D. 二分查找 <strong>答案：A、B、C</strong></p>
-<p><strong>47.</strong>（不定项）栈的应用有？ A. 递归　B. 表达式求值　C.
-括号匹配　D. 广度优先搜索 <strong>答案：A、B、C</strong>（D 用队列）</p>
-<p><strong>48.</strong> 哪种数据结构最适合 BFS？
-<strong>答案：队列</strong> <strong>49.</strong> Dijkstra
-最短路径算法基于什么策略？对权值有何要求？
-<strong>答案：贪心；边权必须非负</strong> <strong>50.</strong>
-平衡二叉树（AVL）任意节点左右子树高度差不超过？
-<strong>答案：1</strong></p>
-<p><strong>51.</strong> 堆通常是一种什么结构？大顶堆满足什么？
-<strong>答案：完全二叉树；父节点 ≥ 子节点</strong> <strong>52.</strong>
-红黑树的关键性质（任写两条）？
-<strong>答案：根和叶为黑；红节点的子必为黑；任一路径黑节点数相同</strong>
-<strong>53.</strong> B+ 树相比 B 树更适合数据库的原因？
-<strong>答案：非叶只存索引、叶节点串成有序链表，范围查询与磁盘 IO
-友好</strong> <strong>54.</strong> 快速排序最坏时间复杂度及触发条件？
-<strong>答案：O(n²)；已有序且首元素作轴</strong> <strong>55.</strong>
-归并排序的空间复杂度与稳定性？ <strong>答案：O(n)，稳定</strong></p>
-<p><strong>56.</strong> 判断单链表是否有环通常用？
-<strong>答案：快慢指针（Floyd）</strong> <strong>57.</strong>
-栈溢出最常见于？ <strong>答案：递归过深 / 无限递归</strong>
-<strong>58.</strong> 哈夫曼树用于？
-<strong>答案：数据压缩（带权路径最短）</strong> <strong>59.</strong>
-拓扑排序适用于？ <strong>答案：有向无环图（DAG）的任务调度</strong>
-<strong>60.</strong> 图的 DFS 遍历借助？
-<strong>答案：栈（递归或显式栈）</strong></p>
-<h3 id="java-语言6180">6. Java 语言（61–80）</h3>
-<p><strong>61.</strong>（不定项）<code>String a="ab"; String b="ab"; String c=new String("ab");</code>
-哪些为 true？ A. <code>a==b</code>　B. <code>a==c</code>　C.
-<code>a.equals(c)</code>　D. <code>b==c</code>
-<strong>答案：A、C</strong>（常量池复用；new 在堆，== 比地址为
-false）</p>
-<p><strong>62.</strong> ArrayList 与
-LinkedList：随机访问更快的是？频繁中间插入删除更适？
-<strong>答案：ArrayList 随机访问快；LinkedList
-插入删除频繁时更合适</strong> <strong>63.</strong> JDK8 中 HashMap
-底层结构？ <strong>答案：数组 + 链表 + 红黑树（链表长度 &gt;8
-转红黑树）</strong> <strong>64.</strong> <code>synchronized</code> 与
-<code>volatile</code> 的区别？ <strong>答案：volatile
-保证可见性、禁止重排，不保证原子性；synchronized
-保证原子性+可见性+有序性（互斥）</strong> <strong>65.</strong> Java
-创建线程的方式？ <strong>答案：继承 Thread / 实现 Runnable / 实现
-Callable / 使用线程池</strong> <strong>66.</strong> JVM
-判断对象可回收的主要算法？ <strong>答案：可达性分析（GC Roots
-不可达即回收）</strong> <strong>67.</strong>
-方法重载（overload）与重写（override）的区别？
-<strong>答案：重载同一类、看参数列表；重写子类覆盖父类、返回协变、不能抛更宽异常</strong>
-<strong>68.</strong> <code>Error</code> 与 <code>Exception</code>
-的区别？ <strong>答案：Error 表示不可恢复的严重问题（如 OOM）；Exception
-可被捕获处理</strong> <strong>69.</strong> 泛型类型擦除发生在？
-<strong>答案：编译期</strong> <strong>70.</strong>（不定项）下列哪些是
-Java 基本类型而非包装类？ A. int　B. Integer　C. double　D. Boolean
-<strong>答案：A、C</strong></p>
-<p><strong>71.</strong> <code>final</code> 修饰类、方法、变量分别含义？
-<strong>答案：类不可继承；方法不可重写；变量引用不可改</strong>
-<strong>72.</strong> String、StringBuilder、StringBuffer 区别？
-<strong>答案：String 不可变；StringBuilder 可变非线程安全；StringBuffer
-可变线程安全</strong> <strong>73.</strong> <code>==</code> 与
-<code>equals</code> 的区别？ <strong>答案：==
-比地址（基本类型比值）；equals 默认比地址，String 重写后比值</strong>
-<strong>74.</strong> Integer 自动装箱的缓存范围？ <strong>答案：−128 ~
-127</strong> <strong>75.</strong> 反射的主要用途？
-<strong>答案：运行时获取类信息、动态创建对象与调用方法</strong>
-<strong>76.</strong> Java 8 主要新特性（任写三项）？
-<strong>答案：Lambda 表达式、Stream API、Optional、接口默认方法</strong>
-<strong>77.</strong> <code>volatile</code> 能否保证 <code>i++</code>
-的原子性？ <strong>答案：不能（i++ 非原子）</strong>
-<strong>78.</strong> 线程池核心参数？
-<strong>答案：核心线程数、最大线程数、工作队列、空闲存活时间、拒绝策略</strong>
-<strong>79.</strong> 深拷贝与浅拷贝的区别？
-<strong>答案：浅拷贝复制引用；深拷贝递归复制对象本身</strong>
-<strong>80.</strong> JVM 内存区域主要有哪些？
-<strong>答案：堆、方法区（元空间）、虚拟机栈、PC
-寄存器、本地方法栈</strong></p>
-<h3 id="编译原理8190该单位特色">7. 编译原理（81–90，该单位特色）</h3>
-<p><strong>81.</strong> 编译的主要阶段依次？ <strong>答案：词法分析 →
-语法分析 → 语义分析 → 中间代码生成 → 代码优化 → 目标代码生成</strong>
-<strong>82.</strong> 词法分析器的输出？
-<strong>答案：记号（token）序列</strong> <strong>83.</strong> 正则式
-<code>a(a|b)*</code> 描述的语言？ <strong>答案：以 a 开头、后接任意多个
-a 或 b 的字符串集合</strong> <strong>84.</strong> LL(1) 三个字母的含义？
-<strong>答案：自左向右扫描、最左推导、向前看 1 个符号</strong>
-<strong>85.</strong> 语法制导翻译（SDT）主要生成？
-<strong>答案：中间代码（如三地址码）</strong> <strong>86.</strong>
-什么是 NFA 与 DFA？ <strong>答案：NFA
-非确定有限自动机（转移可多值/空）；DFA
-确定有限自动机（每状态每符号唯一转移）</strong> <strong>87.</strong>
-语法分析两大类方法？ <strong>答案：自顶向下（如 LL）、自底向上（如
-LR）</strong> <strong>88.</strong> 什么是二义文法？
-<strong>答案：同一句子存在两棵或以上不同语法树的文法</strong>
-<strong>89.</strong> 常见中间代码形式？
-<strong>答案：三地址码、四元式、逆波兰式（后缀表达式）</strong>
-<strong>90.</strong> 代码优化的目标？
-<strong>答案：减少运行时间或空间占用，且不改变程序语义</strong></p>
-<h3 id="计算机网络91100">8. 计算机网络（91–100）</h3>
-<p><strong>91.</strong> TCP 三次握手过程（标志位）？ <strong>答案：SYN →
-SYN+ACK → ACK</strong> <strong>92.</strong> HTTP 状态码 404 含义？
-<strong>答案：请求的资源未找到</strong> <strong>93.</strong> TCP 与 UDP
-的核心区别？ <strong>答案：TCP 面向连接、可靠、有流控/拥塞控制；UDP
-无连接、不可靠但开销小速度快</strong> <strong>94.</strong> DNS 的作用？
-<strong>答案：域名 → IP 地址解析</strong> <strong>95.</strong>
-计算机网络五层模型？ <strong>答案：应用层 / 传输层 / 网络层 / 数据链路层
-/ 物理层</strong> <strong>96.</strong> HTTP 与 HTTPS 的区别？
-<strong>答案：HTTPS = HTTP + TLS 加密，端口 443，防窃听篡改</strong>
-<strong>97.</strong> TCP 四次挥手过程？ <strong>答案：FIN → ACK → FIN →
-ACK</strong> <strong>98.</strong> 子网掩码的作用？ <strong>答案：区分 IP
-地址中的网络位与主机位</strong> <strong>99.</strong> GET 与 POST
-的区别？ <strong>答案：GET 参数在 URL、幂等、可缓存；POST
-在请求体、非幂等、不可缓存</strong> <strong>100.</strong> ARP 协议作用？
-<strong>答案：IP 地址 → MAC 地址解析</strong></p>
-<h3 id="操作系统101110">9. 操作系统（101–110）</h3>
-<p><strong>101.</strong> 进程与线程的区别？
-<strong>答案：进程是资源分配基本单位；线程是 CPU
-调度基本单位；同进程线程共享地址空间</strong> <strong>102.</strong>
-死锁的四个必要条件？
-<strong>答案：互斥、占有并等待、不可抢占、循环等待</strong>
-<strong>103.</strong> 银行家算法用于？ <strong>答案：死锁避免</strong>
-<strong>104.</strong> 分页与分段的主要区别？
-<strong>答案：分页物理划分、页大小固定；分段逻辑划分、段大小可变</strong>
-<strong>105.</strong> 生产者—消费者问题用何种机制同步？
-<strong>答案：信号量（semaphore）/ 互斥量 + 条件变量</strong>
-<strong>106.</strong> 虚拟内存的作用？
-<strong>答案：扩展进程逻辑地址空间，按需调页，让程序可用超过物理内存的空间</strong>
-<strong>107.</strong> 常见页面置换算法？
-<strong>答案：FIFO、LRU、OPT（最佳）</strong> <strong>108.</strong>
-进程的基本状态？ <strong>答案：就绪、运行、阻塞</strong>
-<strong>109.</strong> 什么是临界区？
-<strong>答案：访问共享资源的代码段，执行需互斥</strong>
-<strong>110.</strong> 死锁预防与避免的区别？
-<strong>答案：预防破坏四条件之一（静态）；避免用银行家算法动态判断（如安全序列）</strong></p>
-<h3 id="数据库111120">10. 数据库（111–120）</h3>
-<p><strong>111.</strong> 写出 SQL：查询 score 表中每科平均分大于 80
-的科目及平均分。 <strong>答案：</strong></p>
-<div class="sourceCode" id="cb1"><pre
-class="sourceCode sql"><code class="sourceCode sql"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span> subject, <span class="fu">AVG</span>(score) <span class="kw">AS</span> avg_score</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="kw">FROM</span> score</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="kw">GROUP</span> <span class="kw">BY</span> subject</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="kw">HAVING</span> <span class="fu">AVG</span>(score) <span class="op">&gt;</span> <span class="dv">80</span>;</span></code></pre></div>
-<p><strong>112.</strong> 事务的 ACID？
-<strong>答案：原子性、一致性、隔离性、持久性</strong>
-<strong>113.</strong> 建立索引的代价？
-<strong>答案：加速查询，但占存储、降低增删改性能</strong>
-<strong>114.</strong> 第三范式（3NF）要求消除？
-<strong>答案：传递依赖</strong> <strong>115.</strong> 什么是“脏读”？
-<strong>答案：一个事务读到了另一个事务尚未提交的数据</strong>
-<strong>116.</strong> DROP、DELETE、TRUNCATE 的区别？ <strong>答案：DROP
-删表结构；DELETE 删行可回滚；TRUNCATE 清空表快且不可回滚</strong>
-<strong>117.</strong> 左连接与右连接的区别？
-<strong>答案：左连接保留左表全部行；右连接保留右表全部行</strong>
-<strong>118.</strong> 什么是视图（View）？ <strong>答案：基于 SQL
-查询的虚拟表，不存实际数据</strong> <strong>119.</strong>
-主键与外键的区别？
-<strong>答案：主键唯一标识本表一行；外键引用另一表的主键以建立关联</strong>
-<strong>120.</strong> 事务的隔离级别（由低到高）？
-<strong>答案：读未提交、读已提交、可重复读、串行化</strong></p>
-<h2 id="三编程题机考手写非-oj无自动补全">三、编程题（机考手写，非
-OJ、无自动补全）</h2>
-<blockquote>
-<p>机考在富文本框手敲代码，不许开
-IDE、不许跳出页面。务必脱机手写练习。</p>
-</blockquote>
-<p><strong>121.</strong> 两数之和：给定数组 <code>nums</code> 与目标
-<code>target</code>，返回两数之和等于 target 的下标。</p>
-<div class="sourceCode" id="cb2"><pre
-class="sourceCode java"><code class="sourceCode java"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">public</span> <span class="dt">int</span><span class="op">[]</span> <span class="fu">twoSum</span><span class="op">(</span><span class="dt">int</span><span class="op">[]</span> nums<span class="op">,</span> <span class="dt">int</span> target<span class="op">)</span> <span class="op">{</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">Map</span><span class="op">&lt;</span><span class="bu">Integer</span><span class="op">,</span> <span class="bu">Integer</span><span class="op">&gt;</span> m <span class="op">=</span> <span class="kw">new</span> <span class="bu">HashMap</span><span class="op">&lt;&gt;();</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> <span class="op">(</span><span class="dt">int</span> i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> i <span class="op">&lt;</span> nums<span class="op">.</span><span class="fu">length</span><span class="op">;</span> i<span class="op">++)</span> <span class="op">{</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="op">(</span>m<span class="op">.</span><span class="fu">containsKey</span><span class="op">(</span>target <span class="op">-</span> nums<span class="op">[</span>i<span class="op">]))</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> <span class="kw">new</span> <span class="dt">int</span><span class="op">[]{</span> m<span class="op">.</span><span class="fu">get</span><span class="op">(</span>target <span class="op">-</span> nums<span class="op">[</span>i<span class="op">]),</span> i <span class="op">};</span></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>        m<span class="op">.</span><span class="fu">put</span><span class="op">(</span>nums<span class="op">[</span>i<span class="op">],</span> i<span class="op">);</span></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="kw">new</span> <span class="dt">int</span><span class="op">[]{};</span></span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div>
-<p><strong>122.</strong> 反转单链表。</p>
-<div class="sourceCode" id="cb3"><pre
-class="sourceCode java"><code class="sourceCode java"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">public</span> ListNode <span class="fu">reverse</span><span class="op">(</span>ListNode head<span class="op">)</span> <span class="op">{</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    ListNode prev <span class="op">=</span> <span class="kw">null</span><span class="op">,</span> cur <span class="op">=</span> head<span class="op">;</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> <span class="op">(</span>cur <span class="op">!=</span> <span class="kw">null</span><span class="op">)</span> <span class="op">{</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>        ListNode nxt <span class="op">=</span> cur<span class="op">.</span><span class="fu">next</span><span class="op">;</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>        cur<span class="op">.</span><span class="fu">next</span> <span class="op">=</span> prev<span class="op">;</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>        prev <span class="op">=</span> cur<span class="op">;</span></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>        cur <span class="op">=</span> nxt<span class="op">;</span></span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> prev<span class="op">;</span></span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div>
-<p><strong>123.</strong> 最大子数组和（LeetCode 53）。</p>
-<div class="sourceCode" id="cb4"><pre
-class="sourceCode java"><code class="sourceCode java"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">public</span> <span class="dt">int</span> <span class="fu">maxSubArray</span><span class="op">(</span><span class="dt">int</span><span class="op">[]</span> a<span class="op">)</span> <span class="op">{</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    <span class="dt">int</span> max <span class="op">=</span> <span class="bu">Integer</span><span class="op">.</span><span class="fu">MIN_VALUE</span><span class="op">,</span> cur <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> <span class="op">(</span><span class="dt">int</span> x <span class="op">:</span> a<span class="op">)</span> <span class="op">{</span></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>        cur <span class="op">=</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">max</span><span class="op">(</span>x<span class="op">,</span> cur <span class="op">+</span> x<span class="op">);</span></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>        max <span class="op">=</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">max</span><span class="op">(</span>max<span class="op">,</span> cur<span class="op">);</span></span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> max<span class="op">;</span></span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div>
-<p><strong>124.</strong> 买卖股票的最佳时机（LeetCode
-121，姊妹单位一面原题）。</p>
-<div class="sourceCode" id="cb5"><pre
-class="sourceCode java"><code class="sourceCode java"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">public</span> <span class="dt">int</span> <span class="fu">maxProfit</span><span class="op">(</span><span class="dt">int</span><span class="op">[]</span> prices<span class="op">)</span> <span class="op">{</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="dt">int</span> minPrice <span class="op">=</span> <span class="bu">Integer</span><span class="op">.</span><span class="fu">MAX_VALUE</span><span class="op">,</span> profit <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> <span class="op">(</span><span class="dt">int</span> p <span class="op">:</span> prices<span class="op">)</span> <span class="op">{</span></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>        minPrice <span class="op">=</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">min</span><span class="op">(</span>minPrice<span class="op">,</span> p<span class="op">);</span></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>        profit <span class="op">=</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">max</span><span class="op">(</span>profit<span class="op">,</span> p <span class="op">-</span> minPrice<span class="op">);</span></span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> profit<span class="op">;</span></span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div>
-<p><strong>125.</strong> 合并区间（LeetCode 56，姊妹单位一面原题）。</p>
-<div class="sourceCode" id="cb6"><pre
-class="sourceCode java"><code class="sourceCode java"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="kw">public</span> <span class="dt">int</span><span class="op">[][]</span> <span class="fu">merge</span><span class="op">(</span><span class="dt">int</span><span class="op">[][]</span> intervals<span class="op">)</span> <span class="op">{</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">Arrays</span><span class="op">.</span><span class="fu">sort</span><span class="op">(</span>intervals<span class="op">,</span> <span class="op">(</span>x<span class="op">,</span> y<span class="op">)</span> <span class="op">-&gt;</span> x<span class="op">[</span><span class="dv">0</span><span class="op">]</span> <span class="op">-</span> y<span class="op">[</span><span class="dv">0</span><span class="op">]);</span></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">List</span><span class="op">&lt;</span><span class="dt">int</span><span class="op">[]&gt;</span> res <span class="op">=</span> <span class="kw">new</span> <span class="bu">ArrayList</span><span class="op">&lt;&gt;();</span></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> <span class="op">(</span><span class="dt">int</span><span class="op">[]</span> it <span class="op">:</span> intervals<span class="op">)</span> <span class="op">{</span></span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="op">(</span>res<span class="op">.</span><span class="fu">isEmpty</span><span class="op">()</span> <span class="op">||</span> res<span class="op">.</span><span class="fu">get</span><span class="op">(</span>res<span class="op">.</span><span class="fu">size</span><span class="op">()-</span><span class="dv">1</span><span class="op">)[</span><span class="dv">1</span><span class="op">]</span> <span class="op">&lt;</span> it<span class="op">[</span><span class="dv">0</span><span class="op">])</span></span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>            res<span class="op">.</span><span class="fu">add</span><span class="op">(</span>it<span class="op">);</span></span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span></span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>            res<span class="op">.</span><span class="fu">get</span><span class="op">(</span>res<span class="op">.</span><span class="fu">size</span><span class="op">()-</span><span class="dv">1</span><span class="op">)[</span><span class="dv">1</span><span class="op">]</span> <span class="op">=</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">max</span><span class="op">(</span>res<span class="op">.</span><span class="fu">get</span><span class="op">(</span>res<span class="op">.</span><span class="fu">size</span><span class="op">()-</span><span class="dv">1</span><span class="op">)[</span><span class="dv">1</span><span class="op">],</span> it<span class="op">[</span><span class="dv">1</span><span class="op">]);</span></span>
-<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
-<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> res<span class="op">.</span><span class="fu">toArray</span><span class="op">(</span><span class="kw">new</span> <span class="dt">int</span><span class="op">[</span><span class="dv">0</span><span class="op">][]);</span></span>
-<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div>
-<p><strong>126.</strong> 接雨水（LeetCode 42，姊妹单位一面原题）。</p>
-<div class="sourceCode" id="cb7"><pre
-class="sourceCode java"><code class="sourceCode java"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="kw">public</span> <span class="dt">int</span> <span class="fu">trap</span><span class="op">(</span><span class="dt">int</span><span class="op">[]</span> h<span class="op">)</span> <span class="op">{</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>    <span class="dt">int</span> l <span class="op">=</span> <span class="dv">0</span><span class="op">,</span> r <span class="op">=</span> h<span class="op">.</span><span class="fu">length</span> <span class="op">-</span> <span class="dv">1</span><span class="op">,</span> lo <span class="op">=</span> <span class="dv">0</span><span class="op">,</span> hi <span class="op">=</span> <span class="dv">0</span><span class="op">,</span> ans <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> <span class="op">(</span>l <span class="op">&lt;</span> r<span class="op">)</span> <span class="op">{</span></span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>        lo <span class="op">=</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">max</span><span class="op">(</span>lo<span class="op">,</span> h<span class="op">[</span>l<span class="op">]);</span></span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>        hi <span class="op">=</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">max</span><span class="op">(</span>hi<span class="op">,</span> h<span class="op">[</span>r<span class="op">]);</span></span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="op">(</span>lo <span class="op">&lt;</span> hi<span class="op">)</span> ans <span class="op">+=</span> lo <span class="op">-</span> h<span class="op">[</span>l<span class="op">++];</span></span>
-<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span>         ans <span class="op">+=</span> hi <span class="op">-</span> h<span class="op">[</span>r<span class="op">--];</span></span>
-<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
-<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> ans<span class="op">;</span></span>
-<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div>
-<p><strong>127.</strong> 有效的括号（LeetCode 20）。</p>
-<div class="sourceCode" id="cb8"><pre
-class="sourceCode java"><code class="sourceCode java"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="kw">public</span> <span class="dt">boolean</span> <span class="fu">isValid</span><span class="op">(</span><span class="bu">String</span> s<span class="op">)</span> <span class="op">{</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">Deque</span><span class="op">&lt;</span><span class="bu">Character</span><span class="op">&gt;</span> st <span class="op">=</span> <span class="kw">new</span> <span class="bu">ArrayDeque</span><span class="op">&lt;&gt;();</span></span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> <span class="op">(</span><span class="dt">char</span> c <span class="op">:</span> s<span class="op">.</span><span class="fu">toCharArray</span><span class="op">())</span> <span class="op">{</span></span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="op">(</span>c <span class="op">==</span> <span class="ch">&#39;(&#39;</span> <span class="op">||</span> c <span class="op">==</span> <span class="ch">&#39;[&#39;</span> <span class="op">||</span> c <span class="op">==</span> <span class="ch">&#39;{&#39;</span><span class="op">)</span> st<span class="op">.</span><span class="fu">push</span><span class="op">(</span>c<span class="op">);</span></span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span> <span class="op">{</span></span>
-<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> <span class="op">(</span>st<span class="op">.</span><span class="fu">isEmpty</span><span class="op">())</span> <span class="cf">return</span> <span class="kw">false</span><span class="op">;</span></span>
-<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>            <span class="dt">char</span> t <span class="op">=</span> st<span class="op">.</span><span class="fu">pop</span><span class="op">();</span></span>
-<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> <span class="op">((</span>c <span class="op">==</span> <span class="ch">&#39;)&#39;</span> <span class="op">&amp;&amp;</span> t <span class="op">!=</span> <span class="ch">&#39;(&#39;</span><span class="op">)</span> <span class="op">||</span> <span class="op">(</span>c <span class="op">==</span> <span class="ch">&#39;]&#39;</span> <span class="op">&amp;&amp;</span> t <span class="op">!=</span> <span class="ch">&#39;[&#39;</span><span class="op">)</span> <span class="op">||</span> <span class="op">(</span>c <span class="op">==</span> <span class="ch">&#39;}&#39;</span> <span class="op">&amp;&amp;</span> t <span class="op">!=</span> <span class="ch">&#39;{&#39;</span><span class="op">))</span> <span class="cf">return</span> <span class="kw">false</span><span class="op">;</span></span>
-<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>        <span class="op">}</span></span>
-<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
-<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> st<span class="op">.</span><span class="fu">isEmpty</span><span class="op">();</span></span>
-<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div>
-<p><strong>128.</strong> 二分查找（有序数组）。</p>
-<div class="sourceCode" id="cb9"><pre
-class="sourceCode java"><code class="sourceCode java"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="kw">public</span> <span class="dt">int</span> <span class="fu">binarySearch</span><span class="op">(</span><span class="dt">int</span><span class="op">[]</span> a<span class="op">,</span> <span class="dt">int</span> x<span class="op">)</span> <span class="op">{</span></span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>    <span class="dt">int</span> l <span class="op">=</span> <span class="dv">0</span><span class="op">,</span> r <span class="op">=</span> a<span class="op">.</span><span class="fu">length</span> <span class="op">-</span> <span class="dv">1</span><span class="op">;</span></span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> <span class="op">(</span>l <span class="op">&lt;=</span> r<span class="op">)</span> <span class="op">{</span></span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>        <span class="dt">int</span> m <span class="op">=</span> l <span class="op">+</span> <span class="op">(</span>r <span class="op">-</span> l<span class="op">)</span> <span class="op">/</span> <span class="dv">2</span><span class="op">;</span></span>
-<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="op">(</span>a<span class="op">[</span>m<span class="op">]</span> <span class="op">==</span> x<span class="op">)</span> <span class="cf">return</span> m<span class="op">;</span></span>
-<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span> <span class="cf">if</span> <span class="op">(</span>a<span class="op">[</span>m<span class="op">]</span> <span class="op">&lt;</span> x<span class="op">)</span> l <span class="op">=</span> m <span class="op">+</span> <span class="dv">1</span><span class="op">;</span></span>
-<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span> r <span class="op">=</span> m <span class="op">-</span> <span class="dv">1</span><span class="op">;</span></span>
-<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
-<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="op">-</span><span class="dv">1</span><span class="op">;</span></span>
-<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div>
-<p><strong>129.</strong> 二叉树层序遍历（BFS）。</p>
-<div class="sourceCode" id="cb10"><pre
-class="sourceCode java"><code class="sourceCode java"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="kw">public</span> <span class="bu">List</span><span class="op">&lt;</span><span class="bu">List</span><span class="op">&lt;</span><span class="bu">Integer</span><span class="op">&gt;&gt;</span> <span class="fu">levelOrder</span><span class="op">(</span><span class="bu">TreeNode</span> root<span class="op">)</span> <span class="op">{</span></span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">List</span><span class="op">&lt;</span><span class="bu">List</span><span class="op">&lt;</span><span class="bu">Integer</span><span class="op">&gt;&gt;</span> res <span class="op">=</span> <span class="kw">new</span> <span class="bu">ArrayList</span><span class="op">&lt;&gt;();</span></span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="op">(</span>root <span class="op">==</span> <span class="kw">null</span><span class="op">)</span> <span class="cf">return</span> res<span class="op">;</span></span>
-<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">Queue</span><span class="op">&lt;</span><span class="bu">TreeNode</span><span class="op">&gt;</span> q <span class="op">=</span> <span class="kw">new</span> <span class="bu">LinkedList</span><span class="op">&lt;&gt;();</span></span>
-<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>    q<span class="op">.</span><span class="fu">offer</span><span class="op">(</span>root<span class="op">);</span></span>
-<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> <span class="op">(!</span>q<span class="op">.</span><span class="fu">isEmpty</span><span class="op">())</span> <span class="op">{</span></span>
-<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>        <span class="dt">int</span> n <span class="op">=</span> q<span class="op">.</span><span class="fu">size</span><span class="op">();</span></span>
-<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>        <span class="bu">List</span><span class="op">&lt;</span><span class="bu">Integer</span><span class="op">&gt;</span> level <span class="op">=</span> <span class="kw">new</span> <span class="bu">ArrayList</span><span class="op">&lt;&gt;();</span></span>
-<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> <span class="op">(</span><span class="dt">int</span> i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> i <span class="op">&lt;</span> n<span class="op">;</span> i<span class="op">++)</span> <span class="op">{</span></span>
-<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>            <span class="bu">TreeNode</span> cur <span class="op">=</span> q<span class="op">.</span><span class="fu">poll</span><span class="op">();</span></span>
-<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>            level<span class="op">.</span><span class="fu">add</span><span class="op">(</span>cur<span class="op">.</span><span class="fu">val</span><span class="op">);</span></span>
-<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> <span class="op">(</span>cur<span class="op">.</span><span class="fu">left</span> <span class="op">!=</span> <span class="kw">null</span><span class="op">)</span> q<span class="op">.</span><span class="fu">offer</span><span class="op">(</span>cur<span class="op">.</span><span class="fu">left</span><span class="op">);</span></span>
-<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> <span class="op">(</span>cur<span class="op">.</span><span class="fu">right</span> <span class="op">!=</span> <span class="kw">null</span><span class="op">)</span> q<span class="op">.</span><span class="fu">offer</span><span class="op">(</span>cur<span class="op">.</span><span class="fu">right</span><span class="op">);</span></span>
-<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a>        <span class="op">}</span></span>
-<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a>        res<span class="op">.</span><span class="fu">add</span><span class="op">(</span>level<span class="op">);</span></span>
-<span id="cb10-16"><a href="#cb10-16" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
-<span id="cb10-17"><a href="#cb10-17" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> res<span class="op">;</span></span>
-<span id="cb10-18"><a href="#cb10-18" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div>
-<p><strong>130.</strong> 爬楼梯（LeetCode 70，动态规划）。</p>
-<div class="sourceCode" id="cb11"><pre
-class="sourceCode java"><code class="sourceCode java"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="kw">public</span> <span class="dt">int</span> <span class="fu">climbStairs</span><span class="op">(</span><span class="dt">int</span> n<span class="op">)</span> <span class="op">{</span></span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="op">(</span>n <span class="op">&lt;=</span> <span class="dv">2</span><span class="op">)</span> <span class="cf">return</span> n<span class="op">;</span></span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>    <span class="dt">int</span> a <span class="op">=</span> <span class="dv">1</span><span class="op">,</span> b <span class="op">=</span> <span class="dv">2</span><span class="op">;</span></span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> <span class="op">(</span><span class="dt">int</span> i <span class="op">=</span> <span class="dv">3</span><span class="op">;</span> i <span class="op">&lt;=</span> n<span class="op">;</span> i<span class="op">++)</span> <span class="op">{</span></span>
-<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>        <span class="dt">int</span> c <span class="op">=</span> a <span class="op">+</span> b<span class="op">;</span></span>
-<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>        a <span class="op">=</span> b<span class="op">;</span></span>
-<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>        b <span class="op">=</span> c<span class="op">;</span></span>
-<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
-<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> b<span class="op">;</span></span>
-<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div>
+<main class="quiz">
+  <h1>中证股转科技 · 信息技术岗笔试 — 纯享版题典</h1>
+  <p class="lead">共 130 题，全附答案 · 题型：行测 → 计算机专业 → 手写编程</p>
+<nav id="TOC"><p class="toc-title">目录</p><ul>
+<li class="toc-sec"><a href="#sec1">一、综合能力 / 行测</a></li>
+<li class="toc-sub"><a href="#sub1">1. 言语理解与表达</a></li>
+<li class="toc-sub"><a href="#sub2">2. 数量关系</a></li>
+<li class="toc-sub"><a href="#sub3">3. 判断推理</a></li>
+<li class="toc-sub"><a href="#sub4">4. 资料分析</a></li>
+<li class="toc-sec"><a href="#sec2">二、计算机专业</a></li>
+<li class="toc-sub"><a href="#sub5">5. 数据结构与算法（41–60）</a></li>
+<li class="toc-sub"><a href="#sub6">6. Java 语言（61–80）</a></li>
+<li class="toc-sub"><a href="#sub7">7. 编译原理（81–90，该单位特色）</a></li>
+<li class="toc-sub"><a href="#sub8">8. 计算机网络（91–100）</a></li>
+<li class="toc-sub"><a href="#sub9">9. 操作系统（101–110）</a></li>
+<li class="toc-sub"><a href="#sub10">10. 数据库（111–120）</a></li>
+<li class="toc-sec"><a href="#sec3">三、编程题（机考手写，非 OJ、无自动补全）</a></li>
+</ul></nav>
+<blockquote class="note">依据中证股转及姊妹单位（中证登等）公开笔经题型规律整理的高频模拟/预测题，非官方真题，附答案供冲刺背诵。题型为金融科技 IT 岗标准三段式：行测 → 计算机专业 → 手写编程。</blockquote>
+<h2 class="section-title" id="sec1">一、综合能力 / 行测</h2>
+<h3 class="sub-title" id="sub1">1. 言语理解与表达</h3>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">1</div>
+<div class="q-stem">依次填入横线处最恰当的一项是：儒家强调“________”，主张将心比心；道家追求“________”，倡导顺应自然、不妄为。</div>
+</div>
+<div class="opts">
+<div class="opt"><span class="opt-lbl">A</span>推己及人 / 无为而治</div>
+<div class="opt"><span class="opt-lbl">B</span>见贤思齐 / 顺其自然</div>
+<div class="opt"><span class="opt-lbl">C</span>克己复礼 / 清净无为</div>
+<div class="opt"><span class="opt-lbl">D</span>三省吾身 / 道法自然</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> A</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">2</div>
+<div class="q-stem">下列句子没有语病的一项是：</div>
+</div>
+<div class="opts">
+<div class="opt"><span class="opt-lbl">A</span>通过本次培训，使我的业务能力有了很大提升。</div>
+<div class="opt"><span class="opt-lbl">B</span>能否保持清正廉洁，是干部合格的重要标准。</div>
+<div class="opt"><span class="opt-lbl">C</span>我国高铁运营里程稳居世界第一，已超过 4 万公里。</div>
+<div class="opt"><span class="opt-lbl">D</span>为了防止不发生类似事故，公司完善了制度。</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> C（A 缺主语；B 两面对一面；D 否定失当）</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">3</div>
+<div class="q-stem">对下面这段文字概括最准确的是：“金融科技的本质是金融，技术是手段。脱离风控的技术创新如同无根之木。任何金融活动都必须纳入监管框架。”</div>
+</div>
+<div class="opts">
+<div class="opt"><span class="opt-lbl">A</span>金融科技将取代传统金融</div>
+<div class="opt"><span class="opt-lbl">B</span>技术驱动下监管需跟上创新</div>
+<div class="opt"><span class="opt-lbl">C</span>风控是底线，技术须服从监管与风控</div>
+<div class="opt"><span class="opt-lbl">D</span>监管会扼制创新</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> C</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">4</div>
+<div class="q-stem">语句排序：① 它不仅改变了支付方式，也重塑了商业生态 ② 移动支付在中国的发展世界领先 ③ 从二维码到刷脸，技术迭代迅速 ④ 这正是技术创新与市场需求共振的结果</div>
+</div>
+<div class="opts">
+<div class="opt"><span class="opt-lbl">A</span>②③④①</div>
+<div class="opt"><span class="opt-lbl">B</span>②③①④</div>
+<div class="opt"><span class="opt-lbl">C</span>①③②④</div>
+<div class="opt"><span class="opt-lbl">D</span>②①③④</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> B</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">5</div>
+<div class="q-stem">面对复杂市场环境，企业不能 ________，必须未雨绸缪。</div>
+</div>
+<div class="opts">
+<div class="opt"><span class="opt-lbl">A</span>临渴掘井</div>
+<div class="opt"><span class="opt-lbl">B</span>居安思危</div>
+<div class="opt"><span class="opt-lbl">C</span>防患未然</div>
+<div class="opt"><span class="opt-lbl">D</span>高枕无忧</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> A（与“未雨绸缪”正反相对）</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">6</div>
+<div class="q-stem">下列句子中成语使用不正确的一项是：</div>
+</div>
+<div class="opts">
+<div class="opt"><span class="opt-lbl">A</span>这篇论文见解独到，真可谓不刊之论。</div>
+<div class="opt"><span class="opt-lbl">B</span>他做的报告汗牛充栋，听众却昏昏欲睡。</div>
+<div class="opt"><span class="opt-lbl">C</span>面对质疑，他侃侃而谈，从容不迫。</div>
+<div class="opt"><span class="opt-lbl">D</span>这部作品文不加点，一气呵成。</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> B（汗牛充栋形容书籍极多，不能形容报告）</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">7</div>
+<div class="q-stem">对下面这段文字概括最准确的是：“数字经济不是虚拟经济，而是实体经济的数字化升级。它既包含数字产业化，也包含产业数字化。推动数字经济与实体经济深度融合，是高质量发展的必由之路。”</div>
+</div>
+<div class="opts">
+<div class="opt"><span class="opt-lbl">A</span>数字经济是虚拟经济</div>
+<div class="opt"><span class="opt-lbl">B</span>数字经济将取代实体经济</div>
+<div class="opt"><span class="opt-lbl">C</span>数字经济与实体经济融合是高质量发展必由之路</div>
+<div class="opt"><span class="opt-lbl">D</span>产业数字化不重要</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> C</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">8</div>
+<div class="q-stem">语句排序：① 数据已成为关键生产要素 ② 数字技术的发展使其价值凸显 ③ 各国纷纷布局数字经济 ④ 谁掌握数据谁就掌握未来</div>
+</div>
+<div class="opts">
+<div class="opt"><span class="opt-lbl">A</span>①②③④</div>
+<div class="opt"><span class="opt-lbl">B</span>②①③④</div>
+<div class="opt"><span class="opt-lbl">C</span>①③②④</div>
+<div class="opt"><span class="opt-lbl">D</span>②①④③</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> A</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">9</div>
+<div class="q-stem">在推进改革的过程中，我们要 ________，不能眉毛胡子一把抓。</div>
+</div>
+<div class="opts">
+<div class="opt"><span class="opt-lbl">A</span>统筹兼顾</div>
+<div class="opt"><span class="opt-lbl">B</span>各行其是</div>
+<div class="opt"><span class="opt-lbl">C</span>独善其身</div>
+<div class="opt"><span class="opt-lbl">D</span>墨守成规</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> A</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">10</div>
+<div class="q-stem">下列句子没有语病的一项是：</div>
+</div>
+<div class="opts">
+<div class="opt"><span class="opt-lbl">A</span>由于天气原因，使航班延误。</div>
+<div class="opt"><span class="opt-lbl">B</span>他的事迹对于我们是陌生的。</div>
+<div class="opt"><span class="opt-lbl">C</span>这款产品深受用户所欢迎。</div>
+<div class="opt"><span class="opt-lbl">D</span>经过努力，他终于取得了成功。</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> D（A 缺主语；B 主客颠倒；C “深受……所”杂糅）</div>
+</div>
+<h3 class="sub-title" id="sub2">2. 数量关系</h3>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">11</div>
+<div class="q-stem">甲单独做需 10 天，乙单独做需 15 天，两人合作需几天？</div>
+</div>
+<div class="opts">
+<div class="opt"><span class="opt-lbl">A</span>5</div>
+<div class="opt"><span class="opt-lbl">B</span>6</div>
+<div class="opt"><span class="opt-lbl">C</span>7</div>
+<div class="opt"><span class="opt-lbl">D</span>8</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> B（1÷(1/10+1/15)=6）</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">12</div>
+<div class="q-stem">A、B 相距 120km，甲以 40km/h 先出发 1 小时，乙以 60km/h 从同地追，几小时追上？</div>
+</div>
+<div class="opts">
+<div class="opt"><span class="opt-lbl">A</span>2</div>
+<div class="opt"><span class="opt-lbl">B</span>3</div>
+<div class="opt"><span class="opt-lbl">C</span>4</div>
+<div class="opt"><span class="opt-lbl">D</span>5</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> A（40÷(60−40)=2）</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">13</div>
+<div class="q-stem">从 5 男 3 女中选 3 人，至少 1 女，有几种？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> 46（C(8,3)−C(5,3)=56−10）</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">14</div>
+<div class="q-stem">掷两枚均匀骰子，点数和 &gt; 9 的概率？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> 1/6（(4,6)(5,5)(6,4)(5,6)(6,5)(6,6) 共 6 种 / 36）</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">15</div>
+<div class="q-stem">数字推理：2, 6, 12, 20, 30, ?</div>
+</div>
+<div class="opts">
+<div class="opt"><span class="opt-lbl">A</span>36</div>
+<div class="opt"><span class="opt-lbl">B</span>40</div>
+<div class="opt"><span class="opt-lbl">C</span>42</div>
+<div class="opt"><span class="opt-lbl">D</span>44</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> C（n(n+1)）</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">16</div>
+<div class="q-stem">一件商品成本 100 元，按标价 8 折出售仍获利 20%，标价是多少元？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> 150（0.8x=120 → x=150）</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">17</div>
+<div class="q-stem">100g 浓度为 10% 的盐水加入 10g 盐，新浓度约？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> 18.2%（(10+10)/(100+10)≈18.2%）</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">18</div>
+<div class="q-stem">父子年龄和 60 岁，5 年前父是子的 4 倍，现在父子各几岁？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> 子 15 岁，父 45 岁（设子 x：55−x=4(x−5) → x=15）</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">19</div>
+<div class="q-stem">一条路长 100 米，每隔 10 米种一棵（两端都种），共几棵？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> 11（100/10+1）</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">20</div>
+<div class="q-stem">数字推理：1, 1, 2, 3, 5, 8, ?</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> 13（斐波那契数列）</div>
+</div>
+<h3 class="sub-title" id="sub3">3. 判断推理</h3>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">21</div>
+<div class="q-stem">有人认为“多刷题就能通过笔试”，最能削弱的是：</div>
+</div>
+<div class="opts">
+<div class="opt"><span class="opt-lbl">A</span>有人刷很多题仍没通过</div>
+<div class="opt"><span class="opt-lbl">B</span>笔试还考查心态与知识迁移，刷题无法覆盖</div>
+<div class="opt"><span class="opt-lbl">C</span>刷题能熟悉题型</div>
+<div class="opt"><span class="opt-lbl">D</span>历年题重复率高</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> B</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">22</div>
+<div class="q-stem">图形推理（规律描述）：每幅图黑点数量依次为 1、2、3、4，则第 5 幅有几个？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> 5</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">23</div>
+<div class="q-stem">类比：程序员：代码 = 作家：？</div>
+</div>
+<div class="opts">
+<div class="opt"><span class="opt-lbl">A</span>小说</div>
+<div class="opt"><span class="opt-lbl">B</span>笔</div>
+<div class="opt"><span class="opt-lbl">C</span>读者</div>
+<div class="opt"><span class="opt-lbl">D</span>出版社</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> A（产出物）</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">24</div>
+<div class="q-stem">下列属于“沉没成本”的是：</div>
+</div>
+<div class="opts">
+<div class="opt"><span class="opt-lbl">A</span>已花 3000 元买的不可退培训，决策是否继续时这 3000 元</div>
+<div class="opt"><span class="opt-lbl">B</span>未来要交的房租</div>
+<div class="opt"><span class="opt-lbl">C</span>预计的奖金</div>
+<div class="opt"><span class="opt-lbl">D</span>下月水电费</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> A（已发生且不可收回）</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">25</div>
+<div class="q-stem">已知“下雨 → 地湿”，现知“地湿”，能否推出“下雨”？</div>
+</div>
+<div class="opts">
+<div class="opt"><span class="opt-lbl">A</span>能</div>
+<div class="opt"><span class="opt-lbl">B</span>不能</div>
+<div class="opt"><span class="opt-lbl">C</span>有时能</div>
+<div class="opt"><span class="opt-lbl">D</span>视情况</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> B（肯定后件不能肯定前件）</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">26</div>
+<div class="q-stem">下列能加强“读书能提升认知”的是：</div>
+</div>
+<div class="opts">
+<div class="opt"><span class="opt-lbl">A</span>研究显示阅读量与认知测试得分正相关</div>
+<div class="opt"><span class="opt-lbl">B</span>有人不读书也聪明</div>
+<div class="opt"><span class="opt-lbl">C</span>读书费时间</div>
+<div class="opt"><span class="opt-lbl">D</span>书很贵</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> A</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">27</div>
+<div class="q-stem">类比：医生：医院 = 教师：？</div>
+</div>
+<div class="opts">
+<div class="opt"><span class="opt-lbl">A</span>学校</div>
+<div class="opt"><span class="opt-lbl">B</span>学生</div>
+<div class="opt"><span class="opt-lbl">C</span>课本</div>
+<div class="opt"><span class="opt-lbl">D</span>教室</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> A（职业与场所）</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">28</div>
+<div class="q-stem">图形推理（规律描述）：图形每次顺时针旋转 90°，第 3 幅为横向，则第 4 幅为？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> 纵向（再转 90°）</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">29</div>
+<div class="q-stem">所有 A 是 B，所有 B 是 C，则可推出？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> 所有 A 是 C（三段论传递）</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">30</div>
+<div class="q-stem">“所有同学都及格了”的矛盾命题是？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> 有的同学没及格</div>
+</div>
+<h3 class="sub-title" id="sub4">4. 资料分析</h3>
+<div class="material"><strong>材料 1</strong>：某科技公司 2023 年营收（亿元）：Q1=120，Q2=150，Q3=180，Q4=200；2022 全年 540。</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">31</div>
+<div class="q-stem">2023 全年营收？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> 650 亿</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">32</div>
+<div class="q-stem">Q4 环比增速？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> (200−180)/180≈11.1%</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">33</div>
+<div class="q-stem">上半年占全年比重？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> (120+150)/650≈41.5%</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">34</div>
+<div class="q-stem">2023 同比增长率？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> (650−540)/540≈20.4%</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">35</div>
+<div class="q-stem">哪一季环比增速最高？ <strong>材料 2</strong>：某银行 2023 各季度不良贷款率：Q1=1.5%，Q2=1.4%，Q3=1.3%，Q4=1.2%；贷款总额 Q1=1000 亿，每季递增 100 亿。</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> Q2（(150−120)/120=25%）</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">36</div>
+<div class="q-stem">Q4 贷款总额？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> 1300 亿</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">37</div>
+<div class="q-stem">全年平均不良率（算术平均）？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> (1.5+1.4+1.3+1.2)/4=1.35%</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">38</div>
+<div class="q-stem">不良率整体变化趋势？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> 逐季下降</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">39</div>
+<div class="q-stem">Q3 不良贷款余额？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> 1100×1.3%=14.3 亿</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">40</div>
+<div class="q-stem">全年不良贷款总额？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> 1000×1.5%+1100×1.4%+1200×1.3%+1300×1.2%=61.6 亿</div>
+</div>
+<h2 class="section-title" id="sec2">二、计算机专业</h2>
+<h3 class="sub-title" id="sub5">5. 数据结构与算法（41–60）</h3>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">41</div>
+<div class="q-stem">平均时间复杂度最优的排序是？</div>
+</div>
+<div class="opts">
+<div class="opt"><span class="opt-lbl">A</span>冒泡 O(n²)</div>
+<div class="opt"><span class="opt-lbl">B</span>快速 O(nlogn)</div>
+<div class="opt"><span class="opt-lbl">C</span>插入 O(n²)</div>
+<div class="opt"><span class="opt-lbl">D</span>选择 O(n²)</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> B</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">42</div>
+<div class="q-stem">（不定项）线性时间复杂度的排序有？</div>
+</div>
+<div class="opts">
+<div class="opt"><span class="opt-lbl">A</span>计数</div>
+<div class="opt"><span class="opt-lbl">B</span>基数</div>
+<div class="opt"><span class="opt-lbl">C</span>桶</div>
+<div class="opt"><span class="opt-lbl">D</span>归并</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> A、B、C</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">43</div>
+<div class="q-stem">二叉树第 k 层最多节点数？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> 2^(k−1)</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">44</div>
+<div class="q-stem">完全二叉树 200 个节点，叶子节点数？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> 100</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">45</div>
+<div class="q-stem">对二叉搜索树（BST）做中序遍历得到？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> 升序（有序）序列</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">46</div>
+<div class="q-stem">（不定项）哈希冲突解决方法有？</div>
+</div>
+<div class="opts">
+<div class="opt"><span class="opt-lbl">A</span>开放定址法</div>
+<div class="opt"><span class="opt-lbl">B</span>链地址法</div>
+<div class="opt"><span class="opt-lbl">C</span>再哈希法</div>
+<div class="opt"><span class="opt-lbl">D</span>二分查找</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> A、B、C</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">47</div>
+<div class="q-stem">（不定项）栈的应用有？</div>
+</div>
+<div class="opts">
+<div class="opt"><span class="opt-lbl">A</span>递归</div>
+<div class="opt"><span class="opt-lbl">B</span>表达式求值</div>
+<div class="opt"><span class="opt-lbl">C</span>括号匹配</div>
+<div class="opt"><span class="opt-lbl">D</span>广度优先搜索</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> A、B、C（D 用队列）</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">48</div>
+<div class="q-stem">哪种数据结构最适合 BFS？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> 队列</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">49</div>
+<div class="q-stem">Dijkstra 最短路径算法基于什么策略？对权值有何要求？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> 贪心；边权必须非负</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">50</div>
+<div class="q-stem">平衡二叉树（AVL）任意节点左右子树高度差不超过？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> 1</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">51</div>
+<div class="q-stem">堆通常是一种什么结构？大顶堆满足什么？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> 完全二叉树；父节点 ≥ 子节点</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">52</div>
+<div class="q-stem">红黑树的关键性质（任写两条）？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> 根和叶为黑；红节点的子必为黑；任一路径黑节点数相同</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">53</div>
+<div class="q-stem">B+ 树相比 B 树更适合数据库的原因？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> 非叶只存索引、叶节点串成有序链表，范围查询与磁盘 IO 友好</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">54</div>
+<div class="q-stem">快速排序最坏时间复杂度及触发条件？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> O(n²)；已有序且首元素作轴</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">55</div>
+<div class="q-stem">归并排序的空间复杂度与稳定性？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> O(n)，稳定</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">56</div>
+<div class="q-stem">判断单链表是否有环通常用？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> 快慢指针（Floyd）</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">57</div>
+<div class="q-stem">栈溢出最常见于？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> 递归过深 / 无限递归</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">58</div>
+<div class="q-stem">哈夫曼树用于？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> 数据压缩（带权路径最短）</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">59</div>
+<div class="q-stem">拓扑排序适用于？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> 有向无环图（DAG）的任务调度</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">60</div>
+<div class="q-stem">图的 DFS 遍历借助？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> 栈（递归或显式栈）</div>
+</div>
+<h3 class="sub-title" id="sub6">6. Java 语言（61–80）</h3>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">61</div>
+<div class="q-stem">（不定项）<code>String a=&quot;ab&quot;; String b=&quot;ab&quot;; String c=new String(&quot;ab&quot;);</code> 哪些为 true？</div>
+</div>
+<div class="opts">
+<div class="opt"><span class="opt-lbl">A</span><code>a==b</code></div>
+<div class="opt"><span class="opt-lbl">B</span><code>a==c</code></div>
+<div class="opt"><span class="opt-lbl">C</span><code>a.equals(c)</code></div>
+<div class="opt"><span class="opt-lbl">D</span><code>b==c</code></div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> A、C（常量池复用；new 在堆，== 比地址为 false）</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">62</div>
+<div class="q-stem">ArrayList 与 LinkedList：随机访问更快的是？频繁中间插入删除更适？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> ArrayList 随机访问快；LinkedList 插入删除频繁时更合适</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">63</div>
+<div class="q-stem">JDK8 中 HashMap 底层结构？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> 数组 + 链表 + 红黑树（链表长度 &gt;8 转红黑树）</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">64</div>
+<div class="q-stem"><code>synchronized</code> 与 <code>volatile</code> 的区别？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> volatile 保证可见性、禁止重排，不保证原子性；synchronized 保证原子性+可见性+有序性（互斥）</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">65</div>
+<div class="q-stem">Java 创建线程的方式？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> 继承 Thread / 实现 Runnable / 实现 Callable / 使用线程池</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">66</div>
+<div class="q-stem">JVM 判断对象可回收的主要算法？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> 可达性分析（GC Roots 不可达即回收）</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">67</div>
+<div class="q-stem">方法重载（overload）与重写（override）的区别？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> 重载同一类、看参数列表；重写子类覆盖父类、返回协变、不能抛更宽异常</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">68</div>
+<div class="q-stem"><code>Error</code> 与 <code>Exception</code> 的区别？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> Error 表示不可恢复的严重问题（如 OOM）；Exception 可被捕获处理</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">69</div>
+<div class="q-stem">泛型类型擦除发生在？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> 编译期</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">70</div>
+<div class="q-stem">（不定项）下列哪些是 Java 基本类型而非包装类？</div>
+</div>
+<div class="opts">
+<div class="opt"><span class="opt-lbl">A</span>int</div>
+<div class="opt"><span class="opt-lbl">B</span>Integer</div>
+<div class="opt"><span class="opt-lbl">C</span>double</div>
+<div class="opt"><span class="opt-lbl">D</span>Boolean</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> A、C</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">71</div>
+<div class="q-stem"><code>final</code> 修饰类、方法、变量分别含义？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> 类不可继承；方法不可重写；变量引用不可改</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">72</div>
+<div class="q-stem">String、StringBuilder、StringBuffer 区别？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> String 不可变；StringBuilder 可变非线程安全；StringBuffer 可变线程安全</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">73</div>
+<div class="q-stem"><code>==</code> 与 <code>equals</code> 的区别？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> == 比地址（基本类型比值）；equals 默认比地址，String 重写后比值</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">74</div>
+<div class="q-stem">Integer 自动装箱的缓存范围？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> −128 ~ 127</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">75</div>
+<div class="q-stem">反射的主要用途？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> 运行时获取类信息、动态创建对象与调用方法</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">76</div>
+<div class="q-stem">Java 8 主要新特性（任写三项）？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> Lambda 表达式、Stream API、Optional、接口默认方法</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">77</div>
+<div class="q-stem"><code>volatile</code> 能否保证 <code>i++</code> 的原子性？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> 不能（i++ 非原子）</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">78</div>
+<div class="q-stem">线程池核心参数？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> 核心线程数、最大线程数、工作队列、空闲存活时间、拒绝策略</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">79</div>
+<div class="q-stem">深拷贝与浅拷贝的区别？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> 浅拷贝复制引用；深拷贝递归复制对象本身</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">80</div>
+<div class="q-stem">JVM 内存区域主要有哪些？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> 堆、方法区（元空间）、虚拟机栈、PC 寄存器、本地方法栈</div>
+</div>
+<h3 class="sub-title" id="sub7">7. 编译原理（81–90，该单位特色）</h3>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">81</div>
+<div class="q-stem">编译的主要阶段依次？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> 词法分析 → 语法分析 → 语义分析 → 中间代码生成 → 代码优化 → 目标代码生成</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">82</div>
+<div class="q-stem">词法分析器的输出？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> 记号（token）序列</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">83</div>
+<div class="q-stem">正则式 <code>a(a|b)*</code> 描述的语言？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> 以 a 开头、后接任意多个 a 或 b 的字符串集合</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">84</div>
+<div class="q-stem">LL(1) 三个字母的含义？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> 自左向右扫描、最左推导、向前看 1 个符号</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">85</div>
+<div class="q-stem">语法制导翻译（SDT）主要生成？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> 中间代码（如三地址码）</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">86</div>
+<div class="q-stem">什么是 NFA 与 DFA？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> NFA 非确定有限自动机（转移可多值/空）；DFA 确定有限自动机（每状态每符号唯一转移）</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">87</div>
+<div class="q-stem">语法分析两大类方法？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> 自顶向下（如 LL）、自底向上（如 LR）</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">88</div>
+<div class="q-stem">什么是二义文法？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> 同一句子存在两棵或以上不同语法树的文法</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">89</div>
+<div class="q-stem">常见中间代码形式？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> 三地址码、四元式、逆波兰式（后缀表达式）</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">90</div>
+<div class="q-stem">代码优化的目标？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> 减少运行时间或空间占用，且不改变程序语义</div>
+</div>
+<h3 class="sub-title" id="sub8">8. 计算机网络（91–100）</h3>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">91</div>
+<div class="q-stem">TCP 三次握手过程（标志位）？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> SYN → SYN+ACK → ACK</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">92</div>
+<div class="q-stem">HTTP 状态码 404 含义？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> 请求的资源未找到</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">93</div>
+<div class="q-stem">TCP 与 UDP 的核心区别？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> TCP 面向连接、可靠、有流控/拥塞控制；UDP 无连接、不可靠但开销小速度快</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">94</div>
+<div class="q-stem">DNS 的作用？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> 域名 → IP 地址解析</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">95</div>
+<div class="q-stem">计算机网络五层模型？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> 应用层 / 传输层 / 网络层 / 数据链路层 / 物理层</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">96</div>
+<div class="q-stem">HTTP 与 HTTPS 的区别？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> HTTPS = HTTP + TLS 加密，端口 443，防窃听篡改</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">97</div>
+<div class="q-stem">TCP 四次挥手过程？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> FIN → ACK → FIN → ACK</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">98</div>
+<div class="q-stem">子网掩码的作用？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> 区分 IP 地址中的网络位与主机位</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">99</div>
+<div class="q-stem">GET 与 POST 的区别？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> GET 参数在 URL、幂等、可缓存；POST 在请求体、非幂等、不可缓存</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">100</div>
+<div class="q-stem">ARP 协议作用？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> IP 地址 → MAC 地址解析</div>
+</div>
+<h3 class="sub-title" id="sub9">9. 操作系统（101–110）</h3>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">101</div>
+<div class="q-stem">进程与线程的区别？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> 进程是资源分配基本单位；线程是 CPU 调度基本单位；同进程线程共享地址空间</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">102</div>
+<div class="q-stem">死锁的四个必要条件？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> 互斥、占有并等待、不可抢占、循环等待</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">103</div>
+<div class="q-stem">银行家算法用于？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> 死锁避免</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">104</div>
+<div class="q-stem">分页与分段的主要区别？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> 分页物理划分、页大小固定；分段逻辑划分、段大小可变</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">105</div>
+<div class="q-stem">生产者—消费者问题用何种机制同步？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> 信号量（semaphore）/ 互斥量 + 条件变量</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">106</div>
+<div class="q-stem">虚拟内存的作用？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> 扩展进程逻辑地址空间，按需调页，让程序可用超过物理内存的空间</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">107</div>
+<div class="q-stem">常见页面置换算法？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> FIFO、LRU、OPT（最佳）</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">108</div>
+<div class="q-stem">进程的基本状态？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> 就绪、运行、阻塞</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">109</div>
+<div class="q-stem">什么是临界区？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> 访问共享资源的代码段，执行需互斥</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">110</div>
+<div class="q-stem">死锁预防与避免的区别？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> 预防破坏四条件之一（静态）；避免用银行家算法动态判断（如安全序列）</div>
+</div>
+<h3 class="sub-title" id="sub10">10. 数据库（111–120）</h3>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">111</div>
+<div class="q-stem">写出 SQL：查询 score 表中每科平均分大于 80 的科目及平均分。</div>
+</div>
+<div class="ans"><span class="ans-label">答案（参考代码）</span><pre class="code-block" data-lang="sql"><code>SELECT subject, AVG(score) AS avg_score
+FROM score
+GROUP BY subject
+HAVING AVG(score) &gt; 80;</code></pre></div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">112</div>
+<div class="q-stem">事务的 ACID？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> 原子性、一致性、隔离性、持久性</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">113</div>
+<div class="q-stem">建立索引的代价？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> 加速查询，但占存储、降低增删改性能</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">114</div>
+<div class="q-stem">第三范式（3NF）要求消除？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> 传递依赖</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">115</div>
+<div class="q-stem">什么是“脏读”？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> 一个事务读到了另一个事务尚未提交的数据</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">116</div>
+<div class="q-stem">DROP、DELETE、TRUNCATE 的区别？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> DROP 删表结构；DELETE 删行可回滚；TRUNCATE 清空表快且不可回滚</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">117</div>
+<div class="q-stem">左连接与右连接的区别？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> 左连接保留左表全部行；右连接保留右表全部行</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">118</div>
+<div class="q-stem">什么是视图（View）？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> 基于 SQL 查询的虚拟表，不存实际数据</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">119</div>
+<div class="q-stem">主键与外键的区别？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> 主键唯一标识本表一行；外键引用另一表的主键以建立关联</div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">120</div>
+<div class="q-stem">事务的隔离级别（由低到高）？</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span> 读未提交、读已提交、可重复读、串行化</div>
+</div>
+<h2 class="section-title" id="sec3">三、编程题（机考手写，非 OJ、无自动补全）</h2>
+<blockquote class="note">机考在富文本框手敲代码，不许开 IDE、不许跳出页面。务必脱机手写练习。</blockquote>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">121</div>
+<div class="q-stem">两数之和：给定数组 <code>nums</code> 与目标 <code>target</code>，返回两数之和等于 target 的下标。</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span><pre class="code-block" data-lang="java"><code>public int[] twoSum(int[] nums, int target) {
+    Map&lt;Integer, Integer&gt; m = new HashMap&lt;&gt;();
+    for (int i = 0; i &lt; nums.length; i++) {
+        if (m.containsKey(target - nums[i]))
+            return new int[]{ m.get(target - nums[i]), i };
+        m.put(nums[i], i);
+    }
+    return new int[]{};
+}</code></pre></div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">122</div>
+<div class="q-stem">反转单链表。</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span><pre class="code-block" data-lang="java"><code>public ListNode reverse(ListNode head) {
+    ListNode prev = null, cur = head;
+    while (cur != null) {
+        ListNode nxt = cur.next;
+        cur.next = prev;
+        prev = cur;
+        cur = nxt;
+    }
+    return prev;
+}</code></pre></div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">123</div>
+<div class="q-stem">最大子数组和（LeetCode 53）。</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span><pre class="code-block" data-lang="java"><code>public int maxSubArray(int[] a) {
+    int max = Integer.MIN_VALUE, cur = 0;
+    for (int x : a) {
+        cur = Math.max(x, cur + x);
+        max = Math.max(max, cur);
+    }
+    return max;
+}</code></pre></div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">124</div>
+<div class="q-stem">买卖股票的最佳时机（LeetCode 121，姊妹单位一面原题）。</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span><pre class="code-block" data-lang="java"><code>public int maxProfit(int[] prices) {
+    int minPrice = Integer.MAX_VALUE, profit = 0;
+    for (int p : prices) {
+        minPrice = Math.min(minPrice, p);
+        profit = Math.max(profit, p - minPrice);
+    }
+    return profit;
+}</code></pre></div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">125</div>
+<div class="q-stem">合并区间（LeetCode 56，姊妹单位一面原题）。</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span><pre class="code-block" data-lang="java"><code>public int[][] merge(int[][] intervals) {
+    Arrays.sort(intervals, (x, y) -&gt; x[0] - y[0]);
+    List&lt;int[]&gt; res = new ArrayList&lt;&gt;();
+    for (int[] it : intervals) {
+        if (res.isEmpty() || res.get(res.size()-1)[1] &lt; it[0])
+            res.add(it);
+        else
+            res.get(res.size()-1)[1] = Math.max(res.get(res.size()-1)[1], it[1]);
+    }
+    return res.toArray(new int[0][]);
+}</code></pre></div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">126</div>
+<div class="q-stem">接雨水（LeetCode 42，姊妹单位一面原题）。</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span><pre class="code-block" data-lang="java"><code>public int trap(int[] h) {
+    int l = 0, r = h.length - 1, lo = 0, hi = 0, ans = 0;
+    while (l &lt; r) {
+        lo = Math.max(lo, h[l]);
+        hi = Math.max(hi, h[r]);
+        if (lo &lt; hi) ans += lo - h[l++];
+        else         ans += hi - h[r--];
+    }
+    return ans;
+}</code></pre></div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">127</div>
+<div class="q-stem">有效的括号（LeetCode 20）。</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span><pre class="code-block" data-lang="java"><code>public boolean isValid(String s) {
+    Deque&lt;Character&gt; st = new ArrayDeque&lt;&gt;();
+    for (char c : s.toCharArray()) {
+        if (c == &#x27;(&#x27; || c == &#x27;[&#x27; || c == &#x27;{&#x27;) st.push(c);
+        else {
+            if (st.isEmpty()) return false;
+            char t = st.pop();
+            if ((c == &#x27;)&#x27; &amp;&amp; t != &#x27;(&#x27;) || (c == &#x27;]&#x27; &amp;&amp; t != &#x27;[&#x27;) || (c == &#x27;}&#x27; &amp;&amp; t != &#x27;{&#x27;)) return false;
+        }
+    }
+    return st.isEmpty();
+}</code></pre></div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">128</div>
+<div class="q-stem">二分查找（有序数组）。</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span><pre class="code-block" data-lang="java"><code>public int binarySearch(int[] a, int x) {
+    int l = 0, r = a.length - 1;
+    while (l &lt;= r) {
+        int m = l + (r - l) / 2;
+        if (a[m] == x) return m;
+        else if (a[m] &lt; x) l = m + 1;
+        else r = m - 1;
+    }
+    return -1;
+}</code></pre></div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">129</div>
+<div class="q-stem">二叉树层序遍历（BFS）。</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span><pre class="code-block" data-lang="java"><code>public List&lt;List&lt;Integer&gt;&gt; levelOrder(TreeNode root) {
+    List&lt;List&lt;Integer&gt;&gt; res = new ArrayList&lt;&gt;();
+    if (root == null) return res;
+    Queue&lt;TreeNode&gt; q = new LinkedList&lt;&gt;();
+    q.offer(root);
+    while (!q.isEmpty()) {
+        int n = q.size();
+        List&lt;Integer&gt; level = new ArrayList&lt;&gt;();
+        for (int i = 0; i &lt; n; i++) {
+            TreeNode cur = q.poll();
+            level.add(cur.val);
+            if (cur.left != null) q.offer(cur.left);
+            if (cur.right != null) q.offer(cur.right);
+        }
+        res.add(level);
+    }
+    return res;
+}</code></pre></div>
+</div>
+<div class="q-card">
+<div class="q-head">
+<div class="q-no">130</div>
+<div class="q-stem">爬楼梯（LeetCode 70，动态规划）。</div>
+</div>
+<div class="ans"><span class="ans-label">答案</span><pre class="code-block" data-lang="java"><code>public int climbStairs(int n) {
+    if (n &lt;= 2) return n;
+    int a = 1, b = 2;
+    for (int i = 3; i &lt;= n; i++) {
+        int c = a + b;
+        a = b;
+        b = c;
+    }
+    return b;
+}</code></pre></div>
+</div>
+</main>
 </body>
 </html>
